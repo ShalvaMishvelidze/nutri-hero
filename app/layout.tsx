@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -14,15 +16,21 @@ export const metadata: Metadata = {
   description: "Healthy food recipes",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${lato.variable} font-lato`}>
-        <AntdRegistry>{children}</AntdRegistry>
+        <NextIntlClientProvider messages={messages}>
+          <AntdRegistry>{children}</AntdRegistry>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
