@@ -1,0 +1,1 @@
+export const link_style = `text-[14px] text-black leading-[17px] font-normal p-[3px] capitalize hover:text-black hover:font-bold hover:border-b-[3px] hover:border-b-purple transition-all duration-100 ease-in-out`;

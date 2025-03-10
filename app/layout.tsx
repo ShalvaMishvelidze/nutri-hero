@@ -4,6 +4,7 @@ import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { Header } from "@/components/sections/header";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -27,9 +28,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${lato.variable} font-lato`}>
+      <body className={`${lato.variable} font-lato bg-white`}>
         <NextIntlClientProvider messages={messages}>
-          <AntdRegistry>{children}</AntdRegistry>
+          <AntdRegistry>
+            <Header />
+            {children}
+          </AntdRegistry>
         </NextIntlClientProvider>
       </body>
     </html>

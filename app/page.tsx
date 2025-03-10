@@ -10,10 +10,11 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center mt-[100px] ">
-      <h1>{t("hello")}</h1>
+      <h1 className="text-red">{t("hello")}</h1>
       <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
       <Button
         type="primary"
+        className="!text-blue"
         onClick={() => {
           setUserLocale(locale === "en" ? "ka" : "en");
         }}

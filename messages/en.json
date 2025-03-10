@@ -1,4 +1,17 @@
 {
+  "header": {
+    "exercise": "Exercise",
+    "nutrition": "Nutrition",
+    "expertise": "Expertise",
+    "app": "App",
+    "my_plan": "My Plan",
+    "library": "Library",
+    "progress": "Progress",
+    "blog": "Blog",
+    "account": "Account",
+    "sign_up": "Sign Up",
+    "login": "Login"
+  },
   "home": {
     "hello": "hello world",
     "button": "click me"
