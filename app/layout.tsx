@@ -33,7 +33,7 @@ export default async function RootLayout({
         <AntdRegistry>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            {children}
+            <main className="relative z-1">{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </AntdRegistry>

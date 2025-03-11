@@ -12,6 +12,11 @@
     "sign_up": "Sign Up",
     "login": "Login"
   },
+  "landing_hero": {
+    "heading": "Captivating header goes here!",
+    "paragraph": "A short description works best",
+    "button": "Start now"
+  },
   "home": {
     "hello": "hello world",
     "button": "click me"

@@ -54,6 +54,9 @@ module.exports = {
       fontFamily: {
         lato: ["var(--font-lato)", "sans-serif"],
       },
+      zIndex: {
+        1000: "1000",
+      },
     },
   },
   plugins: [],
