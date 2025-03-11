@@ -15,5 +15,25 @@
   "home": {
     "hello": "გამარჯობა სამყარო",
     "button": "დააჭირე"
+  },
+  "footer": {
+    "copyright": "საავტორო უფლება",
+    "explore": "გამოკვლევა",
+    "exercise": "ვარჯიში",
+    "nutrition": "კვება",
+    "expertise": "ექსპერტიზა",
+    "mobile_app": "მობილური აპლიკაცია",
+    "company": "კომპანია",
+    "legal": "იურიდიული",
+    "contact_us": "დაგვიკავშირდით",
+    "press": "პრესა",
+    "blog": "ბლოგი",
+    "latest_post_one": "უახლესი პოსტი ერთი",
+    "latest_post_two": "უახლესი პოსტი ორი",
+    "latest_post_three": "უახლესი პოსტი სამი",
+    "social": "სოციალური",
+    "facebook": "ფეისბუქი",
+    "twitter": "ტვიტერი",
+    "instagram": "ინსტაგრამი"
   }
 }

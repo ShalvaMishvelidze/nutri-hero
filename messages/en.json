@@ -15,5 +15,25 @@
   "home": {
     "hello": "hello world",
     "button": "click me"
+  },
+  "footer": {
+    "copyright": "Copyright Nutriheos",
+    "explore": "Explore",
+    "exercise": "Exercise",
+    "nutrition": "Nutrition",
+    "expertise": "Expertise",
+    "mobile_app": "Mobile App",
+    "company": "Company",
+    "legal": "Legal",
+    "contact_us": "Contact Us",
+    "press": "Press",
+    "blog": "Blog",
+    "latest_post_one": "Latest Post One",
+    "latest_post_two": "Latest Post Two",
+    "latest_post_three": "Latest Post Three",
+    "social": "Social",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram"
   }
 }
