@@ -6,7 +6,7 @@ const LoggedInHeader = () => {
   return (
     <section className={header_container}>
       <Logo color="black" />
-      <Nav logged_in />
+      <Nav is_logged_in />
     </section>
   );
 };

@@ -49,6 +49,7 @@ module.exports = {
       black: {
         DEFAULT: "#000000",
       },
+      transparent: "transparent",
     },
     extend: {
       fontFamily: {

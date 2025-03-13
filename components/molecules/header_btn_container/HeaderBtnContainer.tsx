@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { container } from "./HeaderBtnContainer.style";
+import { btn_empty, btn_filled, container } from "./HeaderBtnContainer.style";
 import { Btn } from "@/components/atoms/btn";
 
 const HeaderBtnContainer = () => {
@@ -7,8 +7,8 @@ const HeaderBtnContainer = () => {
 
   return (
     <div className={container}>
-      <Btn>{t("sign_up")}</Btn>
-      <Btn>{t("login")}</Btn>
+      <Btn className={btn_filled}>{t("sign_up")}</Btn>
+      <Btn className={btn_empty}>{t("login")}</Btn>
     </div>
   );
 };

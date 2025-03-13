@@ -17,6 +17,37 @@
     "paragraph": "A short description works best",
     "button": "Start now"
   },
+  "landing_exercise": {
+    "exercise": "Exercise",
+    "modal_nav": {
+      "gym": "Gym",
+      "home": "Home",
+      "yoga": "Yoga"
+    },
+    "modal": {
+      "heading_1": "A short title works best",
+      "paragraph_1": "At home to gym, crossfit to pilates, yoga to bodyweight, as well as healthy and easy to make breakfasts, lunches, dinners and snacks. We want to make sure you enjoy the journey for a healthy lifestyle.",
+      "heading_2": "A short title works here too",
+      "paragraph_2": "Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing.",
+      "heading_3": "A short title works here also",
+      "paragraph_3": "May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there smile to my front."
+    },
+    "nutrition": {
+      "heading_1": "A short title works best",
+      "paragraph_1": "At home to gym, crossfit to pilates, yoga to bodyweight, as well as healthy and easy to make breakfasts, lunches, dinners and snacks. We want to make sure you enjoy the journey for a healthy lifestyle.",
+      "heading_2": "A short title works here too",
+      "paragraph_2": "Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing.",
+      "heading_3": "A short title works here also",
+      "paragraph_3": "May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there smile to my front."
+    },
+    "nutrition_nav": {
+      "healthy": "Healthy",
+      "personalized": "Personalized",
+      "professional": "Professional"
+    },
+    "nutrition_header": "Nutrition",
+    "read_more": "Read More"
+  },
   "home": {
     "hello": "hello world",
     "button": "click me"
