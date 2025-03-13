@@ -24,8 +24,8 @@ const MiniNav = ({
       {nav_links.map((link, index) => (
         <Btn
           type="link"
-          className={`${btn} ${is_light && btn_light} ${
-            selectedKey === index && active_style
+          className={`${is_light ? btn_light : btn} ${
+            !is_light && selectedKey === index && active_style
           } ${is_light && selectedKey === index && active_style_light}`}
           key={link}
           onClick={() => {
