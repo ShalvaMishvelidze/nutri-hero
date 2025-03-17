@@ -1,61 +1,44 @@
-import {
-  container,
-  slider_btn,
-  slider_btn_container,
-  swiper_slide,
-} from "./Slider.style";
-import { ReactNode } from "react";
-import Image from "next/image";
-import { Btn } from "@/components/atoms/btn";
+"use client";
+import { carousel_slide, container } from "./Slider.style";
+import { ReactNode, useRef } from "react";
 import { Carousel } from "antd";
+import { CarouselRef } from "antd/es/carousel";
+import { SliderBtnContainer } from "@/components/molecules/slider_btn_conainer";
+import { OmniDirectionalSlide } from "@/components/molecules/omni_directional_slide";
 
 const Slider = ({
-  id,
   slides,
 }: {
-  id: number;
   slides: {
     img_url: string;
     TextComponent: ReactNode;
     right_to_left?: boolean;
   }[];
 }) => {
+  const carouselRef = useRef<CarouselRef>(null);
+
   return (
     <section className={container}>
-      <Carousel slidesPerRow={2}>
+      <Carousel
+        ref={carouselRef}
+        slidesPerRow={1}
+        autoplay
+        autoplaySpeed={5000}
+      >
         {slides.map(({ img_url, TextComponent, right_to_left }, index) => {
           return (
-            <>
-              <div className="w-1/2">{TextComponent}</div>
-              <Image
-                width={640}
-                height={720}
-                src={img_url}
-                alt={`Slide ${index}`}
-                className="w-1/2"
+            <div className={carousel_slide} key={img_url}>
+              <OmniDirectionalSlide
+                TextComponent={TextComponent}
+                img_url={img_url}
+                right_to_left={right_to_left}
+                index={index}
               />
-            </>
+            </div>
           );
         })}
       </Carousel>
-      {/* <div className={slider_btn_container}>
-        <Btn className={`${slider_btn} prev-btn-${id}`}>
-          <Image
-            src={"/arrow-left.svg"}
-            alt="Previous"
-            width={24}
-            height={24}
-          />
-        </Btn>
-        <Btn className={`${slider_btn} next-btn-${id}`}>
-          <Image
-            src={"/arrow-right.svg"}
-            alt="Previous"
-            width={24}
-            height={24}
-          />
-        </Btn>
-      </div> */}
+      <SliderBtnContainer carouselRef={carouselRef} />
     </section>
   );
 };

@@ -32,27 +32,27 @@ export default function Home() {
     },
   ];
 
-  // const slides_2 = [
-  //   {
-  //     img_url: "/salt-man.png",
-  //     TextComponent: (
-  //       <CardText
-  //         heading={t("text_heading_1")}
-  //         paragraph={t("text_paragraph_1")}
-  //       />
-  //     ),
-  //     right_to_left: true,
-  //   },
-  //   {
-  //     img_url: "/thierry-henry.png",
-  //     TextComponent: (
-  //       <CardText
-  //         heading={t("text_heading_2")}
-  //         paragraph={t("text_paragraph_2")}
-  //       />
-  //     ),
-  //   },
-  // ];
+  const slides_2 = [
+    {
+      img_url: "/salt-man.png",
+      TextComponent: (
+        <CardText
+          heading={t("text_heading_2")}
+          paragraph={t("text_paragraph_2")}
+        />
+      ),
+      right_to_left: true,
+    },
+    {
+      img_url: "/thierry-henry.png",
+      TextComponent: (
+        <CardText
+          heading={t("text_heading_1")}
+          paragraph={t("text_paragraph_1")}
+        />
+      ),
+    },
+  ];
 
   return (
     <>
@@ -61,8 +61,8 @@ export default function Home() {
         <LandingHero />
       </HeroContainer>
       <LandingExercise />
-      <Slider id={1} slides={slides_1} />
-      {/* <Slider id={2} slides={slides_2} /> */}
+      <Slider slides={slides_1} />
+      <Slider slides={slides_2} />
     </>
   );
 }
