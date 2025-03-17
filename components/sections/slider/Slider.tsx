@@ -3,7 +3,7 @@ import { carousel_slide, container } from "./Slider.style";
 import { ReactNode, useRef } from "react";
 import { Carousel } from "antd";
 import { CarouselRef } from "antd/es/carousel";
-import { SliderBtnContainer } from "@/components/molecules/slider_btn_conainer";
+import { SliderBtnContainer } from "@/components/molecules/slider_btn_container";
 import { OmniDirectionalSlide } from "@/components/molecules/omni_directional_slide";
 
 const Slider = ({
@@ -25,6 +25,9 @@ const Slider = ({
         slidesPerRow={1}
         autoplay
         autoplaySpeed={5000}
+        dots={{
+          className: "carouselStyle",
+        }}
       >
         {slides.map(
           ({ img_url, TextComponent, right_to_left, heading }, index) => {

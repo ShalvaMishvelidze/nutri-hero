@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body .ant-carousel .carouselStyle li,
+body .ant-carousel .carouselStyle li:after,
+body .ant-carousel .carouselStyle li.slick-active,
+body .ant-carousel .carouselStyle li.slick-active:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate3d(0, 0, 0);
+  background-color: #af8e9a;
+  opacity: 1;
+}
+
+body .ant-carousel .carouselStyle li.slick-active,
+body .ant-carousel .carouselStyle li.slick-active button,
+body .ant-carousel .carouselStyle li.slick-active:after {
+  opacity: 1;
+}
+
+body .ant-carousel .carouselStyle li button {
+  width: 8px;
+  height: 8px;
+  padding: 3px;
+  border-radius: 50%;
+  transform: translate3d(0, 0, 0);
+  background-color: #80334b;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 12;
+}
