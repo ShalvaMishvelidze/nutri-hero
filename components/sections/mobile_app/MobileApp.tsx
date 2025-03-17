@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { container, img_style, text_container } from "./MobileApp.style";
 import { CardTextTitle } from "@/components/atoms/card_text_title";
+import { StoresContainer } from "@/components/molecules/stores_container";
 
 const MobileApp = () => {
   const t = useTranslations("mobile_app");
@@ -19,6 +20,7 @@ const MobileApp = () => {
       <div className={text_container}>
         <CardTextTitle>{t("heading")}</CardTextTitle>
         <CardText heading={t("text_heading")} paragraph={t("text_paragraph")} />
+        <StoresContainer storeStyles="mt-[70px]" />
       </div>
     </section>
   );
