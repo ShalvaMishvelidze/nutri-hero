@@ -61,6 +61,10 @@
     "text_heading": "A nutritionalist and personal trainer in your pocket",
     "text_paragraph": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
   },
+  "landing_cta": {
+    "paragraph": "Join the thousands of people already using Nutriheros today!",
+    "button": "Get Started"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

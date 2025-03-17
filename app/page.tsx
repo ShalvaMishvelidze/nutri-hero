@@ -7,6 +7,7 @@ import { Slider } from "@/components/sections/slider";
 import { CardText } from "@/components/molecules/card_text";
 import { useTranslations } from "next-intl";
 import { MobileApp } from "@/components/sections/mobile_app";
+import { LandingCta } from "@/components/sections/landing_cta";
 
 export default function Home() {
   const t = useTranslations("slider");
@@ -69,6 +70,7 @@ export default function Home() {
       <Slider slides={slides_1} />
       <Slider slides={slides_2} />
       <MobileApp />
+      <LandingCta />
     </>
   );
 }
