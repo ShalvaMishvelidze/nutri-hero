@@ -48,9 +48,13 @@
     "nutrition_header": "Nutrition",
     "read_more": "Read More"
   },
-  "home": {
-    "hello": "hello world",
-    "button": "click me"
+  "slider": {
+    "heading_1": "Sports Expertise",
+    "text_heading_1": "Thierry Henry",
+    "text_paragraph_1": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
+    "heading_2": "Cooking Expertise",
+    "text_heading_2": "Salt Bae",
+    "text_paragraph_2": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem."
   },
   "footer": {
     "copyright": "Copyright Nutriheos",
