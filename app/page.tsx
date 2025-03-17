@@ -6,6 +6,7 @@ import { LandingExercise } from "@/components/sections/landing_exercise";
 import { Slider } from "@/components/sections/slider";
 import { CardText } from "@/components/molecules/card_text";
 import { useTranslations } from "next-intl";
+import { MobileApp } from "@/components/sections/mobile_app";
 
 export default function Home() {
   const t = useTranslations("slider");
@@ -13,6 +14,7 @@ export default function Home() {
   const slides_1 = [
     {
       img_url: "/thierry-henry.png",
+      heading: t("heading_1"),
       TextComponent: (
         <CardText
           heading={t("text_heading_1")}
@@ -22,6 +24,7 @@ export default function Home() {
     },
     {
       img_url: "/salt-man.png",
+      heading: t("heading_2"),
       TextComponent: (
         <CardText
           heading={t("text_heading_2")}
@@ -35,6 +38,7 @@ export default function Home() {
   const slides_2 = [
     {
       img_url: "/salt-man.png",
+      heading: t("heading_2"),
       TextComponent: (
         <CardText
           heading={t("text_heading_2")}
@@ -45,6 +49,7 @@ export default function Home() {
     },
     {
       img_url: "/thierry-henry.png",
+      heading: t("heading_1"),
       TextComponent: (
         <CardText
           heading={t("text_heading_1")}
@@ -63,6 +68,7 @@ export default function Home() {
       <LandingExercise />
       <Slider slides={slides_1} />
       <Slider slides={slides_2} />
+      <MobileApp />
     </>
   );
 }
