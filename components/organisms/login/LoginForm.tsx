@@ -1,18 +1,13 @@
 import { ModalHeading } from "@/components/atoms/modal_heading";
 import { motion, Variants } from "framer-motion";
-import {
-  btn_style,
-  or_container,
-  or_div,
-  small_container,
-} from "./LoginForm.style";
+import { or_container, or_div, small_container } from "./LoginForm.style";
 import { InputPrimary } from "@/components/atoms/input_primary";
 import { InputPostfix } from "@/components/atoms/input_postfix";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import { ModalLink } from "@/components/atoms/modal_link";
-import { Btn } from "@/components/atoms/btn";
 import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
+import { ModalBtn } from "@/components/atoms/modal_btn";
 
 const Login = ({
   slideInVariants,
@@ -28,6 +23,10 @@ const Login = ({
     password: "",
   });
 
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
     <motion.div
       key={"login"}
@@ -38,7 +37,7 @@ const Login = ({
       transition={{ duration: 0.4 }}
       className="w-full"
     >
-      <div className="w-[324px]">
+      <form onSubmit={handleSubmit} className="w-[324px]">
         <ModalHeading>{t("welcome")}</ModalHeading>
         <div className={small_container}>
           <InputPrimary
@@ -83,13 +82,13 @@ const Login = ({
             {t("facebook")}
           </ModalLink>
         </div>
-        <Btn className={btn_style}>{t("login")}</Btn>
+        <ModalBtn>{t("login")}</ModalBtn>
         <AuthLink
           text={t("register_text")}
           link="register"
           link_text={t("register_link")}
         />
-      </div>
+      </form>
     </motion.div>
   );
 };

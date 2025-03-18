@@ -77,6 +77,12 @@
     "register_text": "Not a member yet?",
     "register_link": "Register"
   },
+  "password_reset": {
+    "heading": "Enter your email to reset your password",
+    "email": "Email address",
+    "paragraph": "We'll send a password reset link here",
+    "button": "Send reset link"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",
