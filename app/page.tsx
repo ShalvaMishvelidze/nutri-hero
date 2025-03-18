@@ -14,9 +14,9 @@ export default function Home() {
   const slides_1 = [
     {
       img_url: "/thierry-henry.png",
-      heading: t("heading_1"),
       TextComponent: (
         <CardText
+          title={t("heading_1")}
           heading={t("text_heading_1")}
           paragraph={t("text_paragraph_1")}
         />
@@ -24,9 +24,9 @@ export default function Home() {
     },
     {
       img_url: "/salt-man.png",
-      heading: t("heading_2"),
       TextComponent: (
         <CardText
+          title={t("heading_2")}
           heading={t("text_heading_2")}
           paragraph={t("text_paragraph_2")}
         />
@@ -38,9 +38,9 @@ export default function Home() {
   const slides_2 = [
     {
       img_url: "/salt-man.png",
-      heading: t("heading_2"),
       TextComponent: (
         <CardText
+          title={t("heading_2")}
           heading={t("text_heading_2")}
           paragraph={t("text_paragraph_2")}
         />
@@ -49,9 +49,9 @@ export default function Home() {
     },
     {
       img_url: "/thierry-henry.png",
-      heading: t("heading_1"),
       TextComponent: (
         <CardText
+          title={t("heading_1")}
           heading={t("text_heading_1")}
           paragraph={t("text_paragraph_1")}
         />

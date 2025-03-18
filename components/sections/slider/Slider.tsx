@@ -11,7 +11,6 @@ const Slider = ({
 }: {
   slides: {
     img_url: string;
-    heading: string;
     TextComponent: ReactNode;
     right_to_left?: boolean;
   }[];
@@ -29,21 +28,18 @@ const Slider = ({
           className: "carouselStyle",
         }}
       >
-        {slides.map(
-          ({ img_url, TextComponent, right_to_left, heading }, index) => {
-            return (
-              <div className={carousel_slide} key={img_url}>
-                <OmniDirectionalSlide
-                  TextComponent={TextComponent}
-                  img_url={img_url}
-                  right_to_left={right_to_left}
-                  index={index}
-                  heading={heading}
-                />
-              </div>
-            );
-          }
-        )}
+        {slides.map(({ img_url, TextComponent, right_to_left }, index) => {
+          return (
+            <div className={carousel_slide} key={img_url}>
+              <OmniDirectionalSlide
+                TextComponent={TextComponent}
+                img_url={img_url}
+                right_to_left={right_to_left}
+                index={index}
+              />
+            </div>
+          );
+        })}
       </Carousel>
       <SliderBtnContainer carouselRef={carouselRef} />
     </section>

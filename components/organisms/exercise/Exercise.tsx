@@ -18,7 +18,7 @@ const Exercise = () => {
   ];
 
   return (
-    <ModalWrapper styleClassNames="pb-[40px] pt-[35px] relative top-[-72px] z-10">
+    <ModalWrapper styleClassNames="pb-[40px] pt-[35px] top-[-72px]">
       <div className={container}>
         <MiniNavWrapper
           selectedKey={selectedKey}
