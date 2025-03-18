@@ -8,10 +8,10 @@ const HeaderBtnContainer = () => {
 
   return (
     <div className={container}>
-      <Link href="/auth?signup=true">
+      <Link href="/register">
         <Btn className={btn_filled}>{t("sign_up")}</Btn>
       </Link>
-      <Link href="/auth?login=true">
+      <Link href="/login">
         <Btn className={btn_empty}>{t("login")}</Btn>
       </Link>
     </div>

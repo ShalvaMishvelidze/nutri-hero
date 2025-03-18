@@ -65,6 +65,18 @@
     "paragraph": "Join the thousands of people already using Nutriheros today!",
     "button": "Get Started"
   },
+  "login": {
+    "welcome": "Welcome back! Enter your details below",
+    "username": "Username",
+    "password": "Password",
+    "forgot": "Forgot?",
+    "or": "OR",
+    "google": "Continue with Google",
+    "facebook": "Continue with Facebook",
+    "login": "Login",
+    "register_text": "Not a member yet?",
+    "register_link": "Register"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",
