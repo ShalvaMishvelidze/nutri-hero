@@ -9,7 +9,7 @@ const InputPostfix = ({
   onClick: () => void;
 }) => {
   return (
-    <Btn onClick={onClick} className={btn_style}>
+    <Btn onClick={onClick} type="text" className={btn_style}>
       {children}
     </Btn>
   );
