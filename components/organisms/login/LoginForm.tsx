@@ -9,7 +9,7 @@ import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
 import { ModalBtn } from "@/components/atoms/modal_btn";
 
-const Login = ({
+const LoginForm = ({
   slideInVariants,
   setStep,
 }: {
@@ -82,14 +82,18 @@ const Login = ({
             {t("facebook")}
           </ModalLink>
         </div>
-        <ModalBtn>{t("login")}</ModalBtn>
+        <ModalBtn
+          disabled={(!loginUser.username || !loginUser.password) && true}
+        >
+          {t("login")}
+        </ModalBtn>
         <AuthLink
           text={t("register_text")}
-          link="register"
+          link="registration"
           link_text={t("register_link")}
         />
       </form>
     </motion.div>
   );
 };
-export default Login;
+export default LoginForm;

@@ -83,6 +83,19 @@
     "paragraph": "We'll send a password reset link here",
     "button": "Send reset link"
   },
+  "registration": {
+    "title": "Did someone say registration?",
+    "heading": "That's right! And you can register too!",
+    "paragraph": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem.",
+    "email": "Enter your email address",
+    "google": "Continue with Google",
+    "facebook": "Continue with Facebook",
+    "i_have": "I have read and agree to the",
+    "terms": "terms & conditions",
+    "button": "Get Started",
+    "login_text": "Already have an account?",
+    "login_link": "Login"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

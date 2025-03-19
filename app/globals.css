@@ -31,3 +31,7 @@ body .ant-carousel .carouselStyle li button {
   position: absolute;
   z-index: 12;
 }
+
+.custom-input input::placeholder {
+  padding-left: 5px;
+}
