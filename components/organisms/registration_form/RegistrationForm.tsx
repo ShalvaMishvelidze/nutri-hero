@@ -1,4 +1,12 @@
-import { small_container } from "./RegistrationForm.style";
+import {
+  registration_input,
+  small_container,
+  terms_checkbox,
+  terms_container,
+  terms_link,
+  terms_text,
+  terms_text_container,
+} from "./RegistrationForm.style";
 import { FormEvent, useState } from "react";
 import { ModalLink } from "@/components/atoms/modal_link";
 import { AuthLink } from "@/components/atoms/auth_link";
@@ -26,7 +34,7 @@ const RegistrationForm = () => {
           prefix={
             <Image src={"/email.svg"} alt="email" width={22} height={22} />
           }
-          className="!h-[60px] hover:!border-purple !pl-[12px]"
+          className={registration_input}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -37,22 +45,15 @@ const RegistrationForm = () => {
           {t("facebook")}
         </ModalLink>
       </div>
-      <div className="flex justify-between items-center mt-[40px] mb-[15px]">
-        <div className="flex items-center gap-[3px]">
-          <p className="text-[12px] leading-[22px] text-gray-60">
-            {t("i_have")}
-          </p>
-          <Link
-            className="text-[12px] leading-[22px] text-purple hover:underline"
-            href="#"
-          >
+      <div className={terms_container}>
+        <div className={terms_text_container}>
+          <p className={terms_text}>{t("i_have")}</p>
+          <Link className={terms_link} href="#">
             {t("terms")}
           </Link>
         </div>
         <div
-          className={`size-[15px] rounded-[50%] border cursor-pointer ${
-            checked && "border-blue"
-          }`}
+          className={`${terms_checkbox} ${checked && "border-blue"}`}
           onClick={() => setChecked(!checked)}
         >
           {checked && (
