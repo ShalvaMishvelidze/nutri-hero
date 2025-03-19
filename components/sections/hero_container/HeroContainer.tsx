@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 const HeroContainer = ({ children }: { children: ReactNode }) => {
   return (
-    <div className={container}>
+    <div className={`${container}`}>
       <HeroImage />
       {children}
     </div>

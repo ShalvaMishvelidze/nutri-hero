@@ -10,7 +10,7 @@ const LandingHero = () => {
     <div className={container}>
       <LandingHeading>{t("heading")}</LandingHeading>
       <LandingParagraph>{t("paragraph")}</LandingParagraph>
-      <Btn className="!mt-[50px] !w-[324px] !h-[50px] !bg-purple !text-white !rounded-[5px] !border-box">
+      <Btn className="[body_&]:mt-[50px] [body_&]:w-[324px] [body_&]:h-[50px] [body_&]:bg-purple [body_&]:text-white [body_&]:rounded-[5px] [body_&]:border-box">
         {t("button")}
       </Btn>
     </div>

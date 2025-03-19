@@ -43,3 +43,5 @@ next-env.d.ts
 # misc 
 /reference.tailwind.config.js
 reference.tailwind.config.js
+/test.tsx
+test.tsx

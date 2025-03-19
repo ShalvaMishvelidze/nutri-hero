@@ -10,8 +10,8 @@ const Registration = () => {
 
   return (
     <HeroContainer>
-      <ModalWrapper styleClassNames="pt-[120px] pb-[44px] flex gap-[101px] justify-center items-baseline">
-        <div className="flex-1">
+      <ModalWrapper styleClassNames="[&]:items-start">
+        <div className="flex-1 border-[1px]">
           <CardText
             title={t("title")}
             heading={t("heading")}

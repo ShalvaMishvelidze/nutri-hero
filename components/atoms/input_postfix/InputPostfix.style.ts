@@ -1,1 +1,1 @@
-export const btn_style = `!bg-transparent !border-none !outline-none !text-purple-30 !text-[14px] !leading-[21px] !px-0`;
+export const btn_style = `[body_&]:bg-transparent [body_&]:border-none [body_&]:outline-none [body_&]:text-purple-30 [body_&]:text-[14px] [body_&]:leading-[21px] [body_&]:px-0`;
