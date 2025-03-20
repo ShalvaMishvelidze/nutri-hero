@@ -103,6 +103,11 @@
     "confirm_password": "Confirm password",
     "button": "Next"
   },
+  "registration_success": {
+    "title": "Success! Please check your email",
+    "paragraph": "We've sent a confirmation link to your email address",
+    "link": "Haven't received a link? Click here to resend"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",
