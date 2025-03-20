@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import { btn_empty, btn_filled, container } from "./HeaderBtnContainer.style";
-import { Btn } from "@/components/atoms/btn";
+import { container } from "./HeaderBtnContainer.style";
 import Link from "next/link";
+import { BtnField } from "@/components/atoms/btn_field";
 
 const HeaderBtnContainer = () => {
   const t = useTranslations("header");
@@ -9,10 +9,14 @@ const HeaderBtnContainer = () => {
   return (
     <div className={container}>
       <Link href="/registration">
-        <Btn className={btn_filled}>{t("sign_up")}</Btn>
+        <BtnField btn_size="small" m_top="none">
+          {t("sign_up")}
+        </BtnField>
       </Link>
       <Link href="/login">
-        <Btn className={btn_empty}>{t("login")}</Btn>
+        <BtnField btn_size="auto" m_top="none" bg="empty">
+          {t("login")}
+        </BtnField>
       </Link>
     </div>
   );

@@ -16,7 +16,7 @@ const CardText = ({
 }) => {
   return (
     <div className={`${container} ${is_light && "mt-[30px]"}`}>
-      <CardTextTitle>{title}</CardTextTitle>
+      {title && <CardTextTitle>{title}</CardTextTitle>}
       <CardTextHeading is_light={is_light}>{heading}</CardTextHeading>
       <CardTextParagraph is_light={is_light}>{paragraph}</CardTextParagraph>
     </div>

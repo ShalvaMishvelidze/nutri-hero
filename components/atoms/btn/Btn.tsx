@@ -1,6 +1,6 @@
 import { Button, ButtonProps } from "antd";
 
-const ButtonField = ({
+const Btn = ({
   id,
   name,
   type,
@@ -24,4 +24,4 @@ const ButtonField = ({
     </Button>
   );
 };
-export default ButtonField;
+export default Btn;

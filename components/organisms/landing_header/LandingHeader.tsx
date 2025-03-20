@@ -1,15 +1,11 @@
 "use client";
 import Logo from "@/components/atoms/logo";
 import Nav from "@/components/molecules/nav";
-import {
-  header_container,
-  language_btn,
-  nav_container,
-} from "./LandingHeader.style";
+import { header_container, nav_container } from "./LandingHeader.style";
 import HeaderBtnContainer from "@/components/molecules/header_btn_container";
-import { Button } from "antd";
 import { useLocale } from "next-intl";
 import { setUserLocale } from "@/services/locale";
+import { BtnField } from "@/components/atoms/btn_field";
 
 const LandingHeader = () => {
   const locale = useLocale();
@@ -20,14 +16,16 @@ const LandingHeader = () => {
       <div className={nav_container}>
         <Nav />
         <HeaderBtnContainer />
-        <Button
-          className={language_btn}
+        <BtnField
+          btn_size="auto"
+          bg="empty"
+          m_top="none"
           onClick={() => {
             setUserLocale(locale === "en" ? "ka" : "en");
           }}
         >
           {locale === "en" ? "ka" : "en"}
-        </Button>
+        </BtnField>
       </div>
     </section>
   );

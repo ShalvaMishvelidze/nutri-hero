@@ -4,7 +4,7 @@
     "nutrition": "Nutrition",
     "expertise": "Expertise",
     "app": "App",
-    "my_plan": "My Plan",
+    "my-plan": "My Plan",
     "library": "Library",
     "progress": "Progress",
     "blog": "Blog",
@@ -107,6 +107,19 @@
     "title": "Success! Please check your email",
     "paragraph": "We've sent a confirmation link to your email address",
     "link": "Haven't received a link? Click here to resend"
+  },
+  "my_plan": {
+    "personal": {
+      "title": "Now let's get personal",
+      "username": "Username:",
+      "first_name": "First Name:",
+      "last_name": "Last Name:",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "date_of_birth": "Date of Birth",
+      "button": "Next"
+    }
   },
   "footer": {
     "copyright": "Copyright Nutriheos",

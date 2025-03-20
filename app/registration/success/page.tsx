@@ -1,5 +1,5 @@
 import { RegistrationParagraph } from "@/components/atoms/registration_paragraph";
-import { RegistrationTitle } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_title";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,7 @@ const Success = () => {
   const t = useTranslations("registration_success");
 
   return (
-    <div className="max-w-[1280px] w-full flex justify-center items-center gap-[101px]">
+    <div className="max-w-[1280px] w-full mx-auto flex justify-center items-center gap-[101px]">
       <Image
         className="w-1/2"
         src={"/gym-woman-large.png"}
@@ -17,7 +17,7 @@ const Success = () => {
         height={720}
       />
       <div className="flex flex-col w-1/2 pr-[60px]">
-        <RegistrationTitle>{t("title")}</RegistrationTitle>
+        <TitleField>{t("title")}</TitleField>
         <RegistrationParagraph>{t("paragraph")}</RegistrationParagraph>
         <Link
           href="#"

@@ -1,1 +1,1 @@
-export { default as RegistrationTitle } from "./RegistrationTitle";
+export { default as TitleField } from "./TitleField";

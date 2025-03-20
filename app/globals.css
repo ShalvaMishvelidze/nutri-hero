@@ -32,6 +32,19 @@ body .ant-carousel .carouselStyle li button {
   z-index: 12;
 }
 
-.custom-input input::placeholder {
-  padding-left: 5px;
+body .ant-input-prefix {
+  margin: 5px;
+}
+
+body .ant-form-item {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+body .ant-input-suffix {
+  margin-right: 5px;
+}
+
+body .ant-select .ant-select-selector {
+  background-color: #efeff4 !important;
 }
