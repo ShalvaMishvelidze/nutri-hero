@@ -96,6 +96,13 @@
     "login_text": "Already have an account?",
     "login_link": "Login"
   },
+  "registration_password": {
+    "title": "Create a strong password",
+    "paragraph": "Must be at 8 characters, containing 1 uppercase and 1 lowercase character or more.",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "button": "Next"
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

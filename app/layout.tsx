@@ -34,6 +34,7 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <Header />
             <main className="relative z-1">{children}</main>
+            <div className="h-[10px] bg-white-10 "></div>
             <Footer />
           </NextIntlClientProvider>
         </AntdRegistry>
