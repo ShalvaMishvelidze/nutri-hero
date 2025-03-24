@@ -10,7 +10,7 @@ const Nav = ({ is_logged_in }: { is_logged_in?: boolean }) => {
       {is_logged_in
         ? logged_in_links.map((link) => {
             return (
-              <NavLink key={link} href={link}>
+              <NavLink key={link} href={`/${link}`}>
                 {t(link)}
               </NavLink>
             );

@@ -119,6 +119,67 @@
       "female": "Female",
       "date_of_birth": "Date of Birth",
       "button": "Next"
+    },
+    "goal": {
+      "title": "How to create a goal",
+      "heading": "Brief description of the coming flow.",
+      "paragraph": "ed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo. Sed sagittis et urna non efficitur.",
+      "button": "Next"
+    },
+    "goals": {
+      "1": {
+        "question": "What's your goal preference?",
+        "answer_1": "Fat loss",
+        "answer_2": "Gain muscle"
+      },
+      "2": {
+        "question": "Workout frequency",
+        "answer_1": "Twice per week",
+        "answer_2": "Three times per week",
+        "answer_3": "Four times per week"
+      },
+      "3": {
+        "question": "What's your focus?",
+        "answer_1": "Predominantly gym",
+        "answer_2": "Predominantly home"
+      },
+      "4": {
+        "question": "Focus muscle group",
+        "answer_1": "Legs",
+        "answer_2": "Core",
+        "answer_3": "Arms",
+        "answer_4": "Upperbody"
+      },
+      "5": {
+        "question": "Select your level",
+        "answer_1": "Foundation",
+        "answer_2": "Progressive",
+        "answer_3": "Expert"
+      },
+      "6": {
+        "question": "Diet",
+        "answer_1": "Omnivore",
+        "answer_2": "Vegetarian"
+      },
+      "7": {
+        "question": "Include yoga?",
+        "answer_1": "Include",
+        "answer_2": "Exclude"
+      },
+      "8": {
+        "question": "Exclusively Yoga?",
+        "answer_1": "Yoga only",
+        "answer_2": "Yoga + exercise"
+      },
+      "input": {
+        "heading": "Goal name",
+        "placeholder": "Enter a name"
+      },
+      "btns": {
+        "back": "Back",
+        "done": "Done",
+        "next": "Next"
+      }
     }
   },
   "footer": {
