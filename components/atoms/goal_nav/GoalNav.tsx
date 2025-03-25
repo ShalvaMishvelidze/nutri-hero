@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, RefObject, SetStateAction } from "react";
 import { NavItem } from "./nav_item";
 import { CarouselRef } from "antd/es/carousel";
 
@@ -8,7 +8,7 @@ const GoalNav = ({
   setSection,
 }: {
   section: 0 | 1 | 2 | 3;
-  carouselRef: CarouselRef;
+  carouselRef: RefObject<CarouselRef>;
   setSection: Dispatch<SetStateAction<0 | 1 | 2 | 3>>;
 }) => {
   return (

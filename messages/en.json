@@ -180,6 +180,55 @@
         "done": "Done",
         "next": "Next"
       }
+    },
+    "goal_summary": {
+      "title": "Goal summary",
+      "button": "Set Goal",
+      "name": "Goal name",
+      "1": {
+        "title": "Goal Preference",
+        "1": "Fat loss",
+        "2": "Gain muscle"
+      },
+      "2": {
+        "title": "Workout frequency",
+        "1": "Twice per week",
+        "2": "Three times per week",
+        "3": "Four times per week"
+      },
+      "3": {
+        "title": "Workout focus",
+        "1": "Predominantly gym",
+        "2": "Predominantly home"
+      },
+      "4": {
+        "title": "Muscle focus",
+        "1": "Legs",
+        "2": "Core",
+        "3": "Arms",
+        "4": "Upperbody"
+      },
+      "5": {
+        "title": "Level",
+        "1": "Foundation",
+        "2": "Progressive",
+        "3": "Expert"
+      },
+      "6": {
+        "title": "Diet",
+        "1": "Omnivore",
+        "2": "Vegetarian"
+      },
+      "7": {
+        "title": "Include yoga",
+        "1": "Include",
+        "2": "Exclude"
+      },
+      "8": {
+        "title": "Exclusively Yoga",
+        "1": "Yoga only",
+        "2": "Yoga + exercise"
+      }
     }
   },
   "footer": {

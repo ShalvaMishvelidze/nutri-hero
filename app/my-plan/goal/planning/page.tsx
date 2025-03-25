@@ -9,8 +9,9 @@ import { CarouselRef } from "antd/es/carousel";
 import { BtnField } from "@/components/atoms/btn_field";
 import { HeadingField } from "@/components/atoms/heading_field";
 import { InputField } from "@/components/atoms/input_field";
+import { setGoal } from "@/actions";
 
-const radio_container = `!flex flex-col gap-[28px]`;
+const radio_container = `!flex flex-col gap-[28px] border-none outline-none`;
 
 type Section_Type = 0 | 1 | 2 | 3;
 
@@ -19,6 +20,7 @@ const Planning = () => {
   const carouselRef = useRef<CarouselRef>(null);
   const [section, setSection] = useState<Section_Type>(0);
   const [form] = Form.useForm();
+  const [show, setShow] = useState(false);
 
   const handleClick = (type: "prev" | "next") => {
     if (type === "prev") {
@@ -36,7 +38,17 @@ const Planning = () => {
     changedValues: Record<string, unknown>,
     allValues: Record<string, unknown>
   ) => {
+    if (changedValues[7] === "7 2") {
+      form.resetFields(["8"]);
+      setShow(false);
+    } else if (changedValues[7] === "7 1") {
+      setShow(true);
+    }
     console.log("onValuesChange:", changedValues, allValues);
+  };
+
+  const onFinish = (values: Record<string, unknown>) => {
+    setGoal(values as { [key: string]: string });
   };
 
   return (
@@ -50,22 +62,27 @@ const Planning = () => {
       />
       <div className="!w-1/2 pr-[140px]">
         <GoalNav
-          carouselRef={carouselRef.current as CarouselRef}
+          carouselRef={carouselRef}
           section={section}
           setSection={setSection}
         />
-        <Form form={form} name="goal" onValuesChange={onValuesChange}>
+        <Form
+          form={form}
+          name="goal"
+          onValuesChange={onValuesChange}
+          onFinish={onFinish}
+        >
           <Carousel ref={carouselRef} slidesPerRow={1} dots={false}>
             <div className={radio_container}>
               <RadioInputs
                 form={form}
-                name="question_1"
+                name="1"
                 heading={t("1.question")}
                 paragraphs={[t("1.answer_1"), t("1.answer_2")]}
               />
               <RadioInputs
                 form={form}
-                name="question_2"
+                name="2"
                 heading={t("2.question")}
                 paragraphs={[t("2.answer_1"), t("2.answer_2"), t("2.answer_3")]}
               />
@@ -73,13 +90,13 @@ const Planning = () => {
             <div className={radio_container}>
               <RadioInputs
                 form={form}
-                name="question_3"
+                name="3"
                 heading={t("3.question")}
                 paragraphs={[t("3.answer_1"), t("3.answer_2")]}
               />
               <RadioInputs
                 form={form}
-                name="question_4"
+                name="4"
                 heading={t("4.question")}
                 paragraphs={[
                   t("4.answer_1"),
@@ -92,13 +109,13 @@ const Planning = () => {
             <div className={radio_container}>
               <RadioInputs
                 form={form}
-                name="question_5"
+                name="5"
                 heading={t("5.question")}
                 paragraphs={[t("5.answer_1"), t("5.answer_2"), t("5.answer_3")]}
               />
               <RadioInputs
                 form={form}
-                name="question_6"
+                name="6"
                 heading={t("6.question")}
                 paragraphs={[t("6.answer_1"), t("6.answer_2")]}
               />
@@ -106,18 +123,35 @@ const Planning = () => {
             <div className={radio_container}>
               <RadioInputs
                 form={form}
-                name="question_7"
+                name="7"
                 heading={t("7.question")}
                 paragraphs={[t("7.answer_1"), t("7.answer_2")]}
               />
-              <RadioInputs
-                form={form}
-                name="question_8"
-                heading={t("8.question")}
-                paragraphs={[t("8.answer_1"), t("8.answer_2")]}
-              />
+              {show && (
+                <RadioInputs
+                  form={form}
+                  name="8"
+                  heading={t("8.question")}
+                  paragraphs={[t("8.answer_1"), t("8.answer_2")]}
+                  not_required
+                />
+              )}
               <HeadingField>Goal name</HeadingField>
-              <InputField placeholder="Enter a name" />
+              <Form.Item
+                name={"goal_name"}
+                rules={[
+                  {
+                    required: true,
+                    message: "You can't have a goal without name!",
+                  },
+                  {
+                    max: 256,
+                    message: "Name can't be longer than 256 characters",
+                  },
+                ]}
+              >
+                <InputField placeholder="Enter a name" />
+              </Form.Item>
             </div>
           </Carousel>
 
