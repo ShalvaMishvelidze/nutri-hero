@@ -43,7 +43,7 @@ const Planning = () => {
     <section className="max-w-[1280px] w-full mx-auto flex justify-center items-center gap-[101px]">
       <Image
         className="w-1/2 object-cover"
-        src={"/salad-big.png"}
+        src={`/goal-${section + 1}.png`}
         alt="salad"
         width={632}
         height={720}
