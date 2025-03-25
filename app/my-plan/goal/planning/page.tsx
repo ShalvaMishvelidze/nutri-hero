@@ -38,10 +38,10 @@ const Planning = () => {
     changedValues: Record<string, unknown>,
     allValues: Record<string, unknown>
   ) => {
-    if (changedValues[7] === "7 2") {
+    if (changedValues[7] === "2") {
       form.resetFields(["8"]);
       setShow(false);
-    } else if (changedValues[7] === "7 1") {
+    } else if (changedValues[7] === "1") {
       setShow(true);
     }
     console.log("onValuesChange:", changedValues, allValues);

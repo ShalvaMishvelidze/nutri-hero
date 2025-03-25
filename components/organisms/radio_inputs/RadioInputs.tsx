@@ -44,7 +44,7 @@ const RadioInputs = ({
                   setOldVal={setOldVal}
                   name={name}
                   form={form}
-                  value={`${name} ${index + 1}`}
+                  value={`${index + 1}`}
                 />
               </div>
             ))}

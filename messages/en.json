@@ -184,7 +184,7 @@
     "goal_summary": {
       "title": "Goal summary",
       "button": "Set Goal",
-      "name": "Goal name",
+      "goal_name": "Goal name",
       "1": {
         "title": "Goal Preference",
         "1": "Fat loss",
