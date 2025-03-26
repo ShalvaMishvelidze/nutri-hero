@@ -229,6 +229,16 @@
         "1": "Yoga only",
         "2": "Yoga + exercise"
       }
+    },
+    "hero": {
+      "days": "Days",
+      "exercises": "Exercises",
+      "meals": "Meals",
+      "past_btn": "Past Goals",
+      "new_btn": "New Goal",
+      "paragraph_1": "ACTIVE GOAL",
+      "title": "Drop down to size 8 for summer",
+      "paragraph_2": "A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
     }
   },
   "footer": {

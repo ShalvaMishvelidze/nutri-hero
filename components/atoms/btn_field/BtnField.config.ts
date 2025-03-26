@@ -29,4 +29,10 @@ export enum Bg {
   filled = "!bg-purple !text-white ",
   empty = "!bg-transparent !text-purple !px-0",
   light = "!bg-blue-5 !text-green-80",
+  gray = "!bg-white-10 !text-black",
+}
+
+export enum Text {
+  small = "!text-[14px] !leading-[22px] !tracking-[-0.01px]",
+  normal = "!text-[16px] !leading-[21px]",
 }

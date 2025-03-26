@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { image_style } from "./HeroImage.style";
 
-const HeroImage = () => {
+const HeroImage = ({ img_url = "/food.png" }: { img_url?: string }) => {
   return (
     <Image
-      src={"/food.png"}
+      src={img_url}
       alt="hero background"
       width={1280}
       height={720}

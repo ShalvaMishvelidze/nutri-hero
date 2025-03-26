@@ -5,6 +5,7 @@ import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { TitleField } from "@/components/atoms/registration_title";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { useLayoutEffect, useState } from "react";
 
 const section = `max-w-[1280px] mx-auto`;
@@ -74,7 +75,9 @@ const Summary = () => {
           })}
         </div>
         <div className="flex justify-end mb-[55px]">
-          <BtnField btn_size="medium">{t("button")}</BtnField>
+          <Link href={"/my-plan"}>
+            <BtnField btn_size="medium">{t("button")}</BtnField>
+          </Link>
         </div>
       </div>
     </section>

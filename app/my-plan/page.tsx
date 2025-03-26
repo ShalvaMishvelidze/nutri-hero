@@ -1,4 +1,10 @@
+import { MyPlanHero } from "@/components/sections/my_plan_hero";
+
 const MyPlan = () => {
-  return <div>my plan</div>;
+  return (
+    <section>
+      <MyPlanHero />
+    </section>
+  );
 };
 export default MyPlan;
