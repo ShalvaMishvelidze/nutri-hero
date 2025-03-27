@@ -7,6 +7,7 @@ export enum Title_size {
 
 export enum Mb {
   none = "mb-0",
+  medium = "mb-[27px]",
   big = "mb-[40px]",
 }
 

@@ -239,6 +239,28 @@
       "paragraph_1": "ACTIVE GOAL",
       "title": "Drop down to size 8 for summer",
       "paragraph_2": "A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
+    },
+    "recipes": {
+      "title": "Recipes",
+      "nav": {
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "week": "Week Ahead"
+      },
+      "1": {
+        "name": "Museli",
+        "type": "Breakfast"
+      },
+      "2": {
+        "name": "Tuna Salad",
+        "type": "Launch"
+      },
+      "3": {
+        "name": "Check updates later.",
+        "type": "Browse for inspiration"
+      },
+      "float_msg_1": "Click here to load a new suggestion",
+      "float_msg_2": "Click here to mark a suggestion as 'complete'"
     }
   },
   "footer": {

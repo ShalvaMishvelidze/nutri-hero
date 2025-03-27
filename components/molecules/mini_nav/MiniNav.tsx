@@ -7,6 +7,7 @@ import {
   btn_light,
   container,
 } from "./MiniNav.style";
+import { Dispatch, SetStateAction } from "react";
 
 const MiniNav = ({
   selectedKey,
@@ -17,7 +18,7 @@ const MiniNav = ({
   selectedKey: number;
   nav_links: string[];
   is_light?: boolean;
-  setSelectedKey: (key: number) => void;
+  setSelectedKey: Dispatch<SetStateAction<number>>;
 }) => {
   return (
     <div className={container}>

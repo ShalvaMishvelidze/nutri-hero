@@ -1,9 +1,16 @@
 export enum Btn_Size {
   auto = "!w-auto !px-[12px]",
+  tiny = "!w-[30px] !p-0",
   small = "!min-w-[70px] !px-[12px]",
   medium = "!min-w-[154px] !px-[24px]",
   full = "!w-full !px-[12px]",
 }
+
+export enum H {
+  small = "!h-[30px] ",
+  regular = "!h-[40px] ",
+}
+
 export enum M_top {
   none = "!mt-0",
   regular = "!mt-[30px]",
@@ -35,4 +42,9 @@ export enum Bg {
 export enum Text {
   small = "!text-[14px] !leading-[22px] !tracking-[-0.01px]",
   normal = "!text-[16px] !leading-[21px]",
+}
+
+export enum Radius {
+  small = "!rounded-[2px]",
+  regular = "!rounded-[5px]",
 }
