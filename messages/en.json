@@ -261,6 +261,28 @@
       },
       "float_msg_1": "Click here to load a new suggestion",
       "float_msg_2": "Click here to mark a suggestion as 'complete'"
+    },
+    "workouts": {
+      "title": "Workouts",
+      "nav": {
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "week": "Week Ahead"
+      },
+      "1": {
+        "name": "Rope Work",
+        "type": "Arms"
+      },
+      "2": {
+        "name": "Push Ups",
+        "type": "Chest"
+      },
+      "3": {
+        "name": "Rest Day",
+        "type": "Don't over do it."
+      },
+      "float_msg_1": "Click here to load a new suggestion",
+      "float_msg_2": "Click here to mark a suggestion as 'complete'"
     }
   },
   "footer": {
