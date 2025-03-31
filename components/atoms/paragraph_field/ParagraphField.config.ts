@@ -23,3 +23,10 @@ export enum Color {
   gray = "text-gray-30 opacity-90",
   light_blue = "text-blue-5",
 }
+
+export enum TextTransform {
+  uppercase = "uppercase",
+  capitalize = "capitalize",
+  lowercase = "lowercase",
+  normal = "normal-case",
+}

@@ -20,3 +20,10 @@ export enum Weight {
   medium = "font-medium",
   bold = "font-bold",
 }
+
+export enum TextTransform {
+  uppercase = "uppercase",
+  capitalize = "capitalize",
+  lowercase = "lowercase",
+  normal = "normal-case",
+}
