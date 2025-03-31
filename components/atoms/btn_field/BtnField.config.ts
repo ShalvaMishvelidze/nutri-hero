@@ -1,5 +1,6 @@
 export enum Btn_Size {
   auto = "!w-auto !px-[12px]",
+  smallest = "!w-[22px] !p-0",
   tiny = "!w-[30px] !p-0",
   small = "!min-w-[70px] !px-[12px]",
   medium = "!min-w-[154px] !px-[24px]",
@@ -9,6 +10,7 @@ export enum Btn_Size {
 export enum H {
   small = "!h-[30px] ",
   regular = "!h-[40px] ",
+  medium = "!h-[50px]",
 }
 
 export enum M_top {

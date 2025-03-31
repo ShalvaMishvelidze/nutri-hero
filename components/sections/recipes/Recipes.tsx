@@ -9,8 +9,9 @@ import { Navigation } from "swiper/modules";
 import SwiperBtnContainer from "@/components/molecules/swiper_btn_container/SwiperBtnContainer";
 import { useTranslations } from "next-intl";
 import { container, swiper_style } from "./Recipes.style";
+import { WeekDaysNav } from "@/components/organisms/week_days_nav";
 
-const Recipes = () => {
+const Recipes = ({ days }: { days: string[] }) => {
   const t = useTranslations("my_plan.recipes");
   const [selectedKey, setSelectedKey] = useState(0);
   const [hiddenBtn, setHiddenBtn] = useState<"first" | "last" | "none">(
@@ -39,6 +40,7 @@ const Recipes = () => {
         selectedKey={selectedKey}
         setSelectedKey={setSelectedKey}
       />
+      {selectedKey === 2 && <WeekDaysNav days={days} parent="recipes" />}
       <Swiper
         modules={[Navigation]}
         navigation={{

@@ -13,3 +13,13 @@ export const getGoal = async () => {
   const cookieStore = await cookies();
   return JSON.parse(cookieStore.get("goals")?.value as string);
 };
+
+export const getLocale = async () => {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get("NEXT_LOCALE")?.value;
+  if (locale) {
+    return locale;
+  } else {
+    return "en";
+  }
+};
