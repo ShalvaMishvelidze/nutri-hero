@@ -1,1 +1,1 @@
-export const input_style = `h-[60px] [body_&]:bg-blue-5`;
+export const input_style = `[body_&]:bg-blue-5`;

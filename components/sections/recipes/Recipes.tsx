@@ -49,7 +49,7 @@ const Recipes = ({ days }: { days: string[] }) => {
         }}
         spaceBetween={16}
         slidesPerView={3}
-        className={swiper_style}
+        className={`recipe-swiper ${swiper_style}`}
         onSlideChange={handleSlideChange}
       >
         <SwiperSlide>

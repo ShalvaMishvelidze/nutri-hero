@@ -1,16 +1,18 @@
 import { Input, InputProps } from "antd";
 import { input_style } from "./InputField.style";
-import { InputSize } from "./InputField.config";
+import { H, InputSize } from "./InputField.config";
 
 const InputField = ({
   type,
   input_size = "full",
+  h = "_60",
   placeholder,
   onChange,
   className,
   ...rest
 }: {
   input_size?: keyof typeof InputSize;
+  h?: keyof typeof H;
   type?: string;
   placeholder?: string;
 } & InputProps) => {
@@ -19,7 +21,7 @@ const InputField = ({
       type={type}
       onChange={onChange}
       placeholder={placeholder}
-      className={`${className} ${InputSize[input_size]} ${input_size} ${input_style}`}
+      className={`${className} ${InputSize[input_size]} ${H[h]} ${input_style}`}
       {...rest}
     />
   );

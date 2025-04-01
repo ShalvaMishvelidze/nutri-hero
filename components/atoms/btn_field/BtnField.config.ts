@@ -5,6 +5,7 @@ export enum Btn_Size {
   small = "!min-w-[70px] !px-[12px]",
   medium = "!min-w-[154px] !px-[24px]",
   full = "!w-full !px-[12px]",
+  _88 = "!w-[88px]",
 }
 
 export enum H {
@@ -39,9 +40,12 @@ export enum Bg {
   empty = "!bg-transparent !text-purple !px-0",
   light = "!bg-blue-5 !text-green-80",
   gray = "!bg-white-10 !text-black",
+  green = "!bg-green !text-white",
+  purple_light = "!bg-purple-10 !text-white",
 }
 
 export enum Text {
+  tiny = "!text-[11px] !leading-[12px]",
   small = "!text-[14px] !leading-[22px] !tracking-[-0.01px]",
   normal = "!text-[16px] !leading-[21px]",
 }
@@ -49,4 +53,5 @@ export enum Text {
 export enum Radius {
   small = "!rounded-[2px]",
   regular = "!rounded-[5px]",
+  _3 = "!rounded-[3px]",
 }

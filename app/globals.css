@@ -48,3 +48,8 @@ body .ant-input-suffix {
 body .ant-select .ant-select-selector {
   background-color: #efeff4 !important;
 }
+
+.recipe-swiper .swiper-wrapper,
+.workout-swiper .swiper-wrapper {
+  padding-bottom: 30px;
+}

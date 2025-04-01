@@ -50,7 +50,7 @@ const Workouts = ({ days }: { days: string[] }) => {
         }}
         spaceBetween={16}
         slidesPerView={3}
-        className={swiper_style}
+        className={`workout-swiper ${swiper_style}`}
         onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
