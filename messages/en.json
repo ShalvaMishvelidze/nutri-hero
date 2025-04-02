@@ -287,15 +287,18 @@
   },
   "single_recipe": {
     "title": "Mixed Berry Muesli",
-    "prep_time": "Prep Time",
-    "cook_time": "Cook Time",
-    "serves": "Serves",
-    "difficulty": "Difficulty",
-    "n_a": "N/A",
-    "min": "min",
-    "easy": "Easy",
-    "medium": "Medium",
-    "hard": "Hard",
+    "icon_names": {
+      "1": "Prep Time",
+      "2": "Cook Time",
+      "3": "Serves",
+      "4": "Difficulty"
+    },
+    "icon_desc": {
+      "1": "N/A",
+      "2": "10min",
+      "3": "2",
+      "4": "EASY"
+    },
     "tags": "Tags",
     "tags_list": {
       "1": "#Breakfast",
@@ -353,6 +356,46 @@
     "contains": "Contains: gluten, tree nuts, sulphites.",
     "purchase": "Purchase from Ocodo",
     "tips": "Chef's Tips",
+    "tip": "Once you have mastered the perfect porridge base, you can enjoy experimenting with different toppings like chopped nuts, strawberries and berry coulis."
+  },
+  "single_workout": {
+    "title": "Rope Work",
+    "icon_names": {
+      "1": "Calories Burnt",
+      "2": "Reps",
+      "3": "Muscle",
+      "4": "Difficulty"
+    },
+    "icon_desc": {
+      "1": "123kcal",
+      "2": "3x6",
+      "3": "Arms",
+      "4": "MEDIUM"
+    },
+    "second_title": "Intense Extended Puppy Pose",
+    "tags": "Tags",
+    "tags_list": {
+      "1": "#fatburning",
+      "2": "#arms",
+      "3": "#core"
+    },
+    "step": "Step",
+    "steps_list": {
+      "1": "Add the oats, desiccated coconut and nuts into a large mixing bowl (you can experiment with different types of nuts).",
+      "2": "Grate the apples. After, add the grated apples, coconut yoghurt, lemon juice and zest to the mixing bowl with the oats and nuts. Add the cashew milk and stir the museli mix to make sure everything is combined.",
+      "3": "Clingfilm or cover the bowl, leaving it in the fridge to soak overnight.",
+      "4": "You can prepare the berry coulis the same time as muesli and leave them both overnight in the fridge. Heat a medium frying pan or saucepan, and add in frozen or fresh berries (both work equally well here). Cook on a medium heat.",
+      "5": "As the berries start to release their juices, add in the lemon juice, tossing the pan to mix."
+    },
+    "print": "Print Workout",
+    "preferences": "Tap the options below to save your preferences",
+    "preferences_list": {
+      "1": "Dislike",
+      "2": "Like",
+      "3": "Favoutite",
+      "4": "Complete"
+    },
+    "tips": "Trainer Tips",
     "tip": "Once you have mastered the perfect porridge base, you can enjoy experimenting with different toppings like chopped nuts, strawberries and berry coulis."
   },
   "footer": {

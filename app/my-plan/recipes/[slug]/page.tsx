@@ -1,7 +1,6 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import { getLocale } from "@/actions";
-import { RecipeIcon } from "@/components/atoms/recipe_icon";
 import { TitleField } from "@/components/atoms/registration_title";
 import { HeroContainer } from "@/components/sections/hero_container";
 import { Recipes } from "@/components/sections/recipes";
@@ -15,6 +14,7 @@ import { StepsContainer } from "@/components/organisms/steps_container";
 import { Preferences } from "@/components/molecules/reactions";
 import { Ingredients } from "@/components/organisms/ingredients";
 import { Tips } from "@/components/molecules/tips";
+import { IconsContainer } from "@/components/molecules/icons_container";
 
 const SingleRecipe = async () => {
   const locale = await getLocale();
@@ -36,28 +36,7 @@ const SingleRecipe = async () => {
             {t("title")}
           </TitleField>
         </div>
-        <div className="flex gap-[45px] justify-center items-center">
-          <RecipeIcon
-            icon_url="/clock.svg"
-            paragraph={t("prep_time")}
-            heading={t("n_a")}
-          />
-          <RecipeIcon
-            icon_url="/clock.svg"
-            paragraph={t("cook_time")}
-            heading={`10${t("min")}`}
-          />
-          <RecipeIcon
-            icon_url="/eat.svg"
-            paragraph={t("serves")}
-            heading={"2"}
-          />
-          <RecipeIcon
-            icon_url="/bars.svg"
-            paragraph={t("difficulty")}
-            heading={t("easy")}
-          />
-        </div>
+        <IconsContainer img_prefix={"recipe"} t={t} icons={[1, 2, 3, 4]} />
       </HeroContainer>
       <div className="max-w-[1000px] w-full py-[90px] mx-auto">
         <TitleField title_size="bigger" mb="none">
@@ -73,6 +52,7 @@ const SingleRecipe = async () => {
             <HeadingField
               textAlign="center"
               color="purple"
+              textTransform="uppercase"
               heading_size="_13"
               weight="normal"
             >
