@@ -2,11 +2,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { getLocale } from "@/actions";
 import { TitleField } from "@/components/atoms/registration_title";
-import { HeroContainer } from "@/components/sections/hero_container";
 import { Recipes } from "@/components/sections/recipes";
 import { getNext30Days } from "@/utils";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
 import { Tags } from "@/components/molecules/recipe_tags";
 import { Table } from "@/components/molecules/recipe_table";
 import { HeadingField } from "@/components/atoms/heading_field";
@@ -14,7 +12,7 @@ import { StepsContainer } from "@/components/organisms/steps_container";
 import { Preferences } from "@/components/molecules/reactions";
 import { Ingredients } from "@/components/organisms/ingredients";
 import { Tips } from "@/components/molecules/tips";
-import { IconsContainer } from "@/components/molecules/icons_container";
+import { VideoClientOverlay } from "@/components/sections/video_client_overlay";
 
 const SingleRecipe = async () => {
   const locale = await getLocale();
@@ -23,21 +21,7 @@ const SingleRecipe = async () => {
 
   return (
     <section>
-      <HeroContainer items="end" overlay img_url="/recipe-bg.png">
-        <div className="flex flex-col items-center gap-[20px] mb-[144px]">
-          <Image
-            src={"/play.svg"}
-            alt="play"
-            width={50}
-            height={50}
-            className="size-[50px]"
-          />
-          <TitleField textCase="uppercase" title_size="biggest" color="white">
-            {t("title")}
-          </TitleField>
-        </div>
-        <IconsContainer img_prefix={"recipe"} t={t} icons={[1, 2, 3, 4]} />
-      </HeroContainer>
+      <VideoClientOverlay translationFieldName={"single_recipe"} />{" "}
       <div className="max-w-[1000px] w-full py-[90px] mx-auto">
         <TitleField title_size="bigger" mb="none">
           {t("title")}
