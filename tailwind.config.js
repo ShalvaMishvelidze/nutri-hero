@@ -51,12 +51,39 @@ module.exports = {
       },
       transparent: "transparent",
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      1000: "1000px",
+      lg: "1024px",
+      lp: "1440px",
+      hd: "1920px",
+    },
     extend: {
       fontFamily: {
         lato: ["var(--font-lato)", "sans-serif"],
       },
       zIndex: {
         1000: "1000",
+      },
+      keyframes: {
+        expand: {
+          "0%": {
+            visibility: "hidden",
+            opacity: "0",
+          },
+          "30%": {
+            visibility: "visible",
+            opacity: "0",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        expand: "expand 0.3s forwards",
       },
     },
   },

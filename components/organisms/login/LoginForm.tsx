@@ -8,6 +8,7 @@ import { ModalLink } from "@/components/atoms/modal_link";
 import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
 import { ModalBtn } from "@/components/atoms/modal_btn";
+import Link from "next/link";
 
 const LoginForm = ({
   slideInVariants,
@@ -85,7 +86,7 @@ const LoginForm = ({
         <ModalBtn
           disabled={(!loginUser.username || !loginUser.password) && true}
         >
-          {t("login")}
+          <Link href={"/my-plan"}>{t("login")}</Link>
         </ModalBtn>
         <AuthLink
           text={t("register_text")}

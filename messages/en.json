@@ -398,6 +398,56 @@
     "tips": "Trainer Tips",
     "tip": "Once you have mastered the perfect porridge base, you can enjoy experimenting with different toppings like chopped nuts, strawberries and berry coulis."
   },
+  "library": {
+    "search": {
+      "title": "Search over 500 videos",
+      "paragraph": "An ever growing library of recipes and workouts",
+      "placeholder": "Search",
+      "workouts": "Workouts",
+      "recipes": "Recipes",
+      "required": "Please enter a search term"
+    },
+    "content": {
+      "results": "Results",
+      "exercise": "Exercise",
+      "recipes": "Recipes",
+      "sort": {
+        "1": "Newest",
+        "2": "Best Match"
+      },
+      "filters": {
+        "1": {
+          "title": "Recipe Type",
+          "1": "breakfast",
+          "2": "lunch",
+          "3": "dinner"
+        },
+        "2": {
+          "title": "Diet",
+          "1": "omnivore",
+          "2": "vegetarian"
+        },
+        "3": {
+          "title": "Exclude Allergens",
+          "1": "soybeans",
+          "2": "gluten",
+          "3": "molluscs",
+          "4": "eggs",
+          "5": "sulphur dioxide",
+          "6": "crusaceans",
+          "7": "milk",
+          "8": "fish",
+          "9": "mustard",
+          "10": "celery",
+          "11": "lupin",
+          "12": "tree nuts",
+          "13": "peanuts",
+          "14": "sesame seeds"
+        }
+      },
+      "update_results": "Update Results"
+    }
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

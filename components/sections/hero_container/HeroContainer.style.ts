@@ -1,1 +1,1 @@
-export const container = `w-full h-[720px] relative flex justify-center`;
+export const container = `w-full relative flex justify-center`;

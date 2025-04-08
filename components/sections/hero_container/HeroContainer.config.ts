@@ -8,3 +8,15 @@ export enum Pb {
   none = "pb-0",
   medium = "pb-[60px]",
 }
+
+export enum H {
+  regular = "h-[720px]",
+  max = "h-[calc(100vh-80px)]",
+  full = "h-full",
+}
+
+export enum ChildrenWidth {
+  _1280 = "max-w-[1280px]",
+  max = "w-max",
+  full = "w-full",
+}

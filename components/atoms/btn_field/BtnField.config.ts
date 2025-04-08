@@ -42,6 +42,7 @@ export enum Bg {
   gray = "!bg-white-10 !text-black",
   green = "!bg-green !text-white",
   purple_light = "!bg-purple-10 !text-white",
+  blue = "!bg-blue !text-white",
 }
 
 export enum Text {

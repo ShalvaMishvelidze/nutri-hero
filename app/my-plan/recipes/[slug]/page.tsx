@@ -21,7 +21,7 @@ const SingleRecipe = async () => {
 
   return (
     <section>
-      <VideoClientOverlay translationFieldName={"single_recipe"} />{" "}
+      <VideoClientOverlay translationFieldName={"single_recipe"} />
       <div className="max-w-[1000px] w-full py-[90px] mx-auto">
         <TitleField title_size="bigger" mb="none">
           {t("title")}

@@ -23,7 +23,7 @@ const Login = () => {
   const [step, setStep] = useState<"login" | "reset_password">("login");
 
   return (
-    <HeroContainer>
+    <HeroContainer childrenWidth="max">
       <motion.div
         layout
         className="relative overflow-hidden transition-all duration-300"

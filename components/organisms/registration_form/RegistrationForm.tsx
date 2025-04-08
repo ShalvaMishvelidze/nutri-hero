@@ -18,7 +18,6 @@ import { Form, Input } from "antd";
 
 const RegistrationForm = () => {
   const t = useTranslations("registration");
-  // const [form] = Form.useForm();
   const [email, setEmail] = useState("");
   const [checked, setChecked] = useState(false);
 
@@ -66,26 +65,31 @@ const RegistrationForm = () => {
         </ModalLink>
       </div>
       <div className={terms_container}>
-        <div className={terms_text_container}>
-          <p className={terms_text}>{t("i_have")}</p>
-          <Link className={terms_link} href="#">
-            {t("terms")}
-          </Link>
-        </div>
         <Form.Item
           name="terms"
           valuePropName="checked"
           className="[body_&]:mb-0"
         >
-          {/* <Checkbox>
-          </Checkbox> */}
-          <div
-            className={`${terms_checkbox} ${checked && "border-blue"}`}
-            onClick={() => setChecked(!checked)}
-          >
-            {checked && (
-              <Image src={"checked.svg"} alt="checked" width={15} height={15} />
-            )}
+          <div className="flex items-center justify-between">
+            <div className={terms_text_container}>
+              <p className={terms_text}>{t("i_have")}</p>
+              <Link className={terms_link} href="#">
+                {t("terms")}
+              </Link>
+            </div>
+            <div
+              className={`${terms_checkbox} ${checked && "border-blue"}`}
+              onClick={() => setChecked(!checked)}
+            >
+              {checked && (
+                <Image
+                  src={"checked.svg"}
+                  alt="checked"
+                  width={15}
+                  height={15}
+                />
+              )}
+            </div>
           </div>
         </Form.Item>
       </div>

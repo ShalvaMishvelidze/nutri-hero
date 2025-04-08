@@ -1,6 +1,7 @@
 export enum HeadingSize {
   small = "text-[17px] leading-[22px] tracking-[0.01px]",
   normal = "text-[19px] leading-[22px]",
+  medium = "text-[22px] leading-[28px]",
   _13 = "text-[13px] leading-[18px]",
   _16 = "text-[16px] leading-[28px] tracking-[0.01px]",
   _20 = "text-[20px] leading-[28px]",
@@ -17,6 +18,8 @@ export enum Color {
   white = "text-white",
   black = "text-black",
   purple = "text-purple",
+  blue = "text-blue",
+  gray = "text-gray-30",
 }
 
 export enum Weight {
@@ -38,4 +41,9 @@ export enum TextAlign {
   right = "text-right",
   justify = "text-justify",
   start = "text-start",
+}
+
+export enum TextWrap {
+  wrap = "whitespace-nowrap overflow-hidden text-ellipsis",
+  none = "",
 }

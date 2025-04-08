@@ -6,6 +6,7 @@ import {
   MT,
   TextAlign,
   TextTransform,
+  TextWrap,
   Weight,
 } from "./HeadingField.config";
 
@@ -17,6 +18,8 @@ const HeadingField = ({
   weight = "medium",
   textTransform = "normal",
   textAlign = "left",
+  textWrap = "none",
+  maxLength,
   styleClassName = "",
 }: {
   children: ReactNode;
@@ -26,13 +29,22 @@ const HeadingField = ({
   weight?: keyof typeof Weight;
   textTransform?: keyof typeof TextTransform;
   textAlign?: keyof typeof TextAlign;
+  textWrap?: keyof typeof TextWrap;
+  maxLength?: number;
   styleClassName?: string;
 }) => {
+  const text =
+    typeof children === "string" && maxLength
+      ? children.length > maxLength
+        ? children.slice(0, maxLength) + "..."
+        : children
+      : children;
+
   return (
     <h3
-      className={`${heading_style} ${HeadingSize[heading_size]} ${MT[mt]} ${Color[color]} ${Weight[weight]} ${TextTransform[textTransform]} ${styleClassName} ${TextAlign[textAlign]}`}
+      className={`${heading_style} ${HeadingSize[heading_size]} ${MT[mt]} ${Color[color]} ${Weight[weight]} ${TextTransform[textTransform]} ${styleClassName} ${TextAlign[textAlign]} ${TextWrap[textWrap]}`}
     >
-      {children}
+      {text}
     </h3>
   );
 };

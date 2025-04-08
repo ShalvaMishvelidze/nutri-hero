@@ -6,5 +6,6 @@ export enum InputSize {
 
 export enum H {
   _25 = "!h-[25px]",
+  _50 = "h-[50px]",
   _60 = "h-[60px]",
 }
