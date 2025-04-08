@@ -9,6 +9,7 @@ import {
   P_bottom,
   Radius,
   Text,
+  TextColor,
 } from "./BtnField.config";
 import { btn_style } from "./BtnField.style";
 
@@ -22,6 +23,7 @@ const BtnField = ({
   text = "normal",
   h = "regular",
   radius = "regular",
+  textColor = "white",
   ref,
   children,
   ...rest
@@ -36,11 +38,12 @@ const BtnField = ({
   h?: keyof typeof H;
   radius?: keyof typeof Radius;
   ref?: RefObject<HTMLButtonElement>;
+  textColor?: keyof typeof TextColor;
   children: ReactNode;
 } & ButtonProps) => {
   return (
     <Button
-      className={`${styleClassName} ${btn_style} ${Btn_Size[btn_size]} ${M_top[m_top]} ${Bg[bg]} ${M_left[m_left]} ${P_bottom[p_bottom]} ${Text[text]} ${H[h]} ${Radius[radius]}`}
+      className={`${styleClassName} ${btn_style} ${Btn_Size[btn_size]} ${M_top[m_top]} ${Bg[bg]} ${M_left[m_left]} ${P_bottom[p_bottom]} ${Text[text]} ${H[h]} ${Radius[radius]} ${TextColor[textColor]}`}
       ref={ref}
       {...rest}
     >

@@ -3,6 +3,7 @@ import { heading_style } from "./HeadingField.style";
 import {
   Color,
   HeadingSize,
+  MB,
   MT,
   TextAlign,
   TextTransform,
@@ -19,6 +20,7 @@ const HeadingField = ({
   textTransform = "normal",
   textAlign = "left",
   textWrap = "none",
+  mb = "none",
   maxLength,
   styleClassName = "",
 }: {
@@ -30,6 +32,7 @@ const HeadingField = ({
   textTransform?: keyof typeof TextTransform;
   textAlign?: keyof typeof TextAlign;
   textWrap?: keyof typeof TextWrap;
+  mb?: keyof typeof MB;
   maxLength?: number;
   styleClassName?: string;
 }) => {
@@ -42,7 +45,7 @@ const HeadingField = ({
 
   return (
     <h3
-      className={`${heading_style} ${HeadingSize[heading_size]} ${MT[mt]} ${Color[color]} ${Weight[weight]} ${TextTransform[textTransform]} ${styleClassName} ${TextAlign[textAlign]} ${TextWrap[textWrap]}`}
+      className={`${heading_style} ${HeadingSize[heading_size]} ${MT[mt]} ${Color[color]} ${Weight[weight]} ${TextTransform[textTransform]} ${styleClassName} ${TextAlign[textAlign]} ${TextWrap[textWrap]} ${MB[mb]}`}
     >
       {text}
     </h3>

@@ -19,6 +19,7 @@ const LoggedInHeader = () => {
           m_top="none"
           m_left="medium"
           p_bottom="tiny"
+          textColor="purple"
           onClick={() => {
             setUserLocale(locale === "en" ? "ka" : "en");
           }}

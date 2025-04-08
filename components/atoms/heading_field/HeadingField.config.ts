@@ -2,9 +2,11 @@ export enum HeadingSize {
   small = "text-[17px] leading-[22px] tracking-[0.01px]",
   normal = "text-[19px] leading-[22px]",
   medium = "text-[22px] leading-[28px]",
+  big = "text-[28px] leading-[32px]",
   _13 = "text-[13px] leading-[18px]",
   _16 = "text-[16px] leading-[28px] tracking-[0.01px]",
   _20 = "text-[20px] leading-[28px]",
+  _30 = "text-[30px] leading-[32px]",
 }
 
 export enum MT {
@@ -12,6 +14,10 @@ export enum MT {
   normal = "mt-[20px]",
   big = "mt-[50px]",
   _60 = "mt-[60px]",
+}
+export enum MB {
+  none = "mb-0",
+  _5 = "mb-[5px]",
 }
 
 export enum Color {

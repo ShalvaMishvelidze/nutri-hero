@@ -448,6 +448,34 @@
       "update_results": "Update Results"
     }
   },
+  "progress": {
+    "user_name": "Ruth Mendoza",
+    "days": "Days",
+    "exercises": "Exercises",
+    "meals": "Meals",
+    "weight": "Weight",
+    "kg": "kg",
+    "height": "Height",
+    "inches": "inches",
+    "bmi": "Body Mass Index",
+    "healthy": "Healthy",
+    "edit": "Edit",
+    "save": "Save",
+    "card_1": {
+      "heading": "ACTIVE GOAL",
+      "title": "Drop down to size 8 for summer",
+      "paragraph": "A progressive plan, with an omnivore diet. Exercising three times per week at the gym. Focusing on your legs with yoga included to achieve fat loss."
+    },
+    "card_2": {
+      "heading": "PAST GOAL",
+      "title": "Yoga and veggie month",
+      "activate": "Activate"
+    },
+    "card_3": {
+      "title": "Hydration",
+      "paragraph": "Water comprises 60% of the human body and plays a vital role in most of the body's processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
+    }
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

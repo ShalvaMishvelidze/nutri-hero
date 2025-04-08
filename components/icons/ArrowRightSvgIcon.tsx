@@ -1,12 +1,12 @@
 const ArrowRightSVGIcon = ({ className }: { className?: string }) => {
-  const baseClass = "text-[#ffffff] text-[16px] box-border fill-current";
+  const baseClassName = "text-[#ffffff] text-[16px] box-border fill-current";
 
   return (
     <svg
       viewBox="0 0 448 512"
       height="1em"
       width="1em"
-      className={`${baseClass} ${className}`}
+      className={`${baseClassName} ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

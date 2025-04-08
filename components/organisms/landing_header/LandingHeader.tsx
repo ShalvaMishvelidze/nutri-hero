@@ -20,6 +20,7 @@ const LandingHeader = () => {
           btn_size="auto"
           bg="empty"
           m_top="none"
+          textColor="purple"
           onClick={() => {
             setUserLocale(locale === "en" ? "ka" : "en");
           }}

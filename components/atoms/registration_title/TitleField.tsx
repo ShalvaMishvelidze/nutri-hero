@@ -8,6 +8,7 @@ const TitleField = ({
   color = "black",
   weight = "extra",
   textCase = "normal",
+  styleClassName = "",
   children,
 }: {
   title_size?: keyof typeof Title_size;
@@ -16,10 +17,11 @@ const TitleField = ({
   weight?: keyof typeof Weight;
   children: ReactNode;
   textCase?: keyof typeof Case;
+  styleClassName?: string;
 }) => {
   return (
     <h1
-      className={`${heading_style} ${Title_size[title_size]} ${Mb[mb]} ${Color[color]} ${Weight[weight]} ${Case[textCase]}`}
+      className={`${heading_style} ${styleClassName} ${Title_size[title_size]} ${Mb[mb]} ${Color[color]} ${Weight[weight]} ${Case[textCase]}`}
     >
       {children}
     </h1>

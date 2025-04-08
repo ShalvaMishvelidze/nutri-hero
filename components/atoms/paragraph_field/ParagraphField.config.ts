@@ -34,6 +34,7 @@ export enum Color {
   light_blue = "text-blue-5",
   purple = "text-purple",
   dark_gray = "text-gray-50",
+  gray_60 = "text-gray-60",
 }
 
 export enum TextTransform {
