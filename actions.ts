@@ -23,3 +23,18 @@ export const getLocale = async () => {
     return "en";
   }
 };
+
+export const setIsLoggedInCookie = async (isLoggedIn: boolean) => {
+  const cookieStore = await cookies();
+  cookieStore.set("isLoggedIn", String(isLoggedIn));
+};
+
+export const handleLanding = async () => {
+  const cookieStore = await cookies();
+  const isLoggedIn = cookieStore.get("isLoggedIn")?.value;
+  if (isLoggedIn) {
+    redirect("/my-plan");
+  } else {
+    return;
+  }
+};

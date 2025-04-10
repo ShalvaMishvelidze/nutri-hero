@@ -1,15 +1,16 @@
-"use client";
 import { HeroContainer } from "@/components/sections/hero_container";
 import { LandingHero } from "@/components/organisms/landing_hero";
 import { LandingExercise } from "@/components/sections/landing_exercise";
 import { Slider } from "@/components/sections/slider";
 import { CardText } from "@/components/molecules/card_text";
-import { useTranslations } from "next-intl";
 import { MobileApp } from "@/components/sections/mobile_app";
 import { LandingCta } from "@/components/sections/landing_cta";
+import { handleLanding } from "@/actions";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
-  const t = useTranslations("slider");
+export default async function Home() {
+  await handleLanding();
+  const t = await getTranslations("slider");
 
   const slides_1 = [
     {

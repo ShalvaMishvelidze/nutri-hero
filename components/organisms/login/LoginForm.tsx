@@ -1,3 +1,4 @@
+"use client";
 import { ModalHeading } from "@/components/atoms/modal_heading";
 import { motion, Variants } from "framer-motion";
 import { or_container, or_div, small_container } from "./LoginForm.style";
@@ -8,7 +9,8 @@ import { ModalLink } from "@/components/atoms/modal_link";
 import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
 import { ModalBtn } from "@/components/atoms/modal_btn";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { setIsLoggedInCookie } from "@/actions";
 
 const LoginForm = ({
   slideInVariants,
@@ -17,6 +19,7 @@ const LoginForm = ({
   slideInVariants: Variants;
   setStep: Dispatch<SetStateAction<"login" | "reset_password">>;
 }) => {
+  const router = useRouter();
   const t = useTranslations("login");
 
   const [loginUser, setLoginUser] = useState({
@@ -85,8 +88,13 @@ const LoginForm = ({
         </div>
         <ModalBtn
           disabled={(!loginUser.username || !loginUser.password) && true}
+          onClick={() => {
+            setIsLoggedInCookie(true).then(() => {
+              router.push("/my-plan");
+            });
+          }}
         >
-          <Link href={"/my-plan"}>{t("login")}</Link>
+          {t("login")}
         </ModalBtn>
         <AuthLink
           text={t("register_text")}
