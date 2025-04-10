@@ -10,6 +10,7 @@ import { BtnField } from "@/components/atoms/btn_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { TitleField } from "@/components/atoms/registration_title";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const MyPlanHero = () => {
   const t = useTranslations("my_plan.hero");
@@ -23,7 +24,7 @@ const MyPlanHero = () => {
               {t("past_btn")}
             </BtnField>
             <BtnField text="small" m_top="none">
-              {t("new_btn")}
+              <Link href={"/my-plan/goal"}>{t("new_btn")}</Link>
             </BtnField>
           </div>
         </div>

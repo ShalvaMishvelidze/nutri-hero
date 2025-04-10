@@ -24,7 +24,8 @@ const EditBtn = ({
           text="small"
           bg={isEditing ? "purple_dark" : "gray_light"}
           textColor={isEditing ? "white" : "gray"}
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation();
             setIsEditing(!isEditing);
           }}
         >

@@ -4,17 +4,22 @@ import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { TitleField } from "@/components/atoms/registration_title";
 import { EditBtn } from "@/components/sections/progress_header/progress_header_cards/progress_header_card/edit_btn";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const container =
-  "relative w-full rounded-[5px] bg-white-6 px-[25px] py-[16px]";
+  "relative w-full rounded-[5px] bg-white-6 px-[25px] py-[16px] cursor-pointer";
 const btn_container = "absolute top-[12px] right-[10px]";
 
 const CartTop = () => {
+  const router = useRouter();
   const t = useTranslations("progress");
   const [isEditing, setIsEditing] = useState(false);
   return (
-    <div className={container}>
+    <div
+      className={container}
+      onClick={() => router.push("/my-plan/goal/summary")}
+    >
       <div className={btn_container}>
         <EditBtn
           isEditing={isEditing}

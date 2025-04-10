@@ -23,7 +23,7 @@ const BtnField = ({
   text = "normal",
   h = "regular",
   radius = "regular",
-  textColor = "white",
+  textColor,
   ref,
   children,
   ...rest
@@ -43,7 +43,11 @@ const BtnField = ({
 } & ButtonProps) => {
   return (
     <Button
-      className={`${styleClassName} ${btn_style} ${Btn_Size[btn_size]} ${M_top[m_top]} ${Bg[bg]} ${M_left[m_left]} ${P_bottom[p_bottom]} ${Text[text]} ${H[h]} ${Radius[radius]} ${TextColor[textColor]}`}
+      className={`${styleClassName} ${btn_style} ${Btn_Size[btn_size]} ${
+        M_top[m_top]
+      } ${Bg[bg]} ${M_left[m_left]} ${P_bottom[p_bottom]} ${Text[text]} ${
+        H[h]
+      } ${Radius[radius]} ${textColor && TextColor[textColor]}`}
       ref={ref}
       {...rest}
     >
