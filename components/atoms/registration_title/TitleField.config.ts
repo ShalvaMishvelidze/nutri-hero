@@ -21,6 +21,7 @@ export enum Color {
 
 export enum Weight {
   normal = "font-normal",
+  semibold = "font-semibold",
   bold = "font-bold",
   extra = "font-extrabold",
 }

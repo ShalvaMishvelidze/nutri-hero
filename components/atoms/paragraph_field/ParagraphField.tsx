@@ -17,6 +17,7 @@ const ParagraphField = ({
   color = "black",
   textTransform = "normal",
   leading = "none",
+  styleClassName = "",
 }: {
   children: ReactNode;
   heading_size?: keyof typeof ParagraphSize;
@@ -25,10 +26,11 @@ const ParagraphField = ({
   color?: keyof typeof Color;
   textTransform?: keyof typeof TextTransform;
   leading?: keyof typeof Leading;
+  styleClassName?: string;
 }) => {
   return (
     <p
-      className={`${paragraph_style}  ${ParagraphSize[heading_size]} ${MT[mt]} ${Weight[weight]} ${Color[color]} ${TextTransform[textTransform]} ${Leading[leading]}`}
+      className={`${paragraph_style}  ${ParagraphSize[heading_size]} ${MT[mt]} ${Weight[weight]} ${Color[color]} ${TextTransform[textTransform]} ${Leading[leading]} ${styleClassName}`}
     >
       {children}
     </p>

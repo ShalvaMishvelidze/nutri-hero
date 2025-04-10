@@ -26,11 +26,13 @@ export enum Color {
   purple = "text-purple",
   blue = "text-blue",
   gray = "text-gray-30",
+  gray_44 = "text-gray-44",
 }
 
 export enum Weight {
   normal = "font-normal",
   medium = "font-medium",
+  semibold = "font-semibold",
   bold = "font-bold",
 }
 

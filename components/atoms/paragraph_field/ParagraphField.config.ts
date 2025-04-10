@@ -3,6 +3,7 @@ export enum ParagraphSize {
   small = "text-[16px] leading-[20px]",
   normal = "text-[19px] leading-[22px]",
   medium = "text-[22px] leading-[28px] tracking-[0.01px]",
+  _13_22 = "text-[13px] leading-[22px]",
   _14 = "text-[14px] leading-[18px]",
 }
 

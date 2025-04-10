@@ -34,6 +34,7 @@ module.exports = {
         25: "#00000066",
         30: "#B2B2B2",
         35: "#E5E5E5",
+        44: "#CECECE",
         45: "#C7C7CC",
         50: "#707070",
         60: "#676069",
@@ -88,5 +89,6 @@ module.exports = {
       },
     },
   },
+  safelist: ["line-clamp-3", "line-clamp-4", "line-clamp-6"],
   plugins: [],
 };

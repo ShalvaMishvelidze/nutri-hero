@@ -476,6 +476,45 @@
       "paragraph": "Water comprises 60% of the human body and plays a vital role in most of the body's processes and functions. Even a small amount of dehydration can interfere with these bodily processes, negatively affecting mood, physical and mental performance."
     }
   },
+  "blog": {
+    "title": "NEWS",
+    "1": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, interdum placerat erat. Curabitur sit amet eros vel orci venenatis hendrerit. Cras sagittis sagittis sagittis. In hac habitasse platea dictumst. Phasellus diam erat, porttitor sed ligula at, ultricies auctor tellus. Donec ut sem in turpis ultrices suscipit ut auctor tellus. Quisque a tincidunt ipsum.",
+      "date": "18 JAN 2019"
+    },
+    "2": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, interdum placerat erat. Curabitur sit amet eros vel orci venenatis hendrerit. Cras sagittis sagittis sagittis. In hac habitasse platea dictumst. Phasellus diam erat, porttitor sed ligula at, ultricies auctor tellus. Donec ut sem in turpis ultrices suscipit ut auctor tellus. Quisque a tincidunt ipsum.",
+      "date": "18 JAN 2019"
+    },
+    "3": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien. Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "date": "18 JAN 2019"
+    },
+    "4": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, interdum placerat erat. Curabitur sit amet eros vel orci venenatis hendrerit. Cras sagittis sagittis sagittis. In hac habitasse platea dictumst. Phasellus diam erat, porttitor sed ligula at, ultricies auctor tellus. Donec ut sem in turpis ultrices suscipit ut auctor tellus. Quisque a tincidunt ipsum.",
+      "date": "18 JAN 2019"
+    },
+    "5": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, interdum placerat erat. Curabitur sit amet eros vel orci venenatis hendrerit. Cras sagittis sagittis sagittis. In hac habitasse platea dictumst. Phasellus diam erat, porttitor sed ligula at, ultricies auctor tellus. Donec ut sem in turpis ultrices suscipit ut auctor tellus. Quisque a tincidunt ipsum.",
+      "date": "18 JAN 2019"
+    },
+    "6": {
+      "title": "Post Title",
+      "author": "AUTHOR",
+      "paragraph": "Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean at leo tellus. Morbi eu leo sapien. Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus.",
+      "date": "18 JAN 2019"
+    }
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",
