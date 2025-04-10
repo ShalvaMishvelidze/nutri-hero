@@ -5,6 +5,7 @@ export enum Title_size {
   biggest = "text-[60px] max-sm:text-[32px] leading-[74px] max-sm:leading-[39px] tracking-[0.02px]",
   giant = "text-[80px] leading-[92px] tracking-[0.03px]",
   _22 = "text-[22px] max-sm:text-[16px] leading-[28px] max-sm:leading-[20px] tracking-[0.01px]",
+  _50_60 = "text-[50px] max-sm:text-[28px] leading-[60px] max-sm:leading-[34px] tracking-[0.02px]",
 }
 
 export enum Mb {

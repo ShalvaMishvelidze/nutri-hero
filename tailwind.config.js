@@ -89,6 +89,6 @@ module.exports = {
       },
     },
   },
-  safelist: ["line-clamp-3", "line-clamp-4", "line-clamp-6"],
+  safelist: ["line-clamp-3", "line-clamp-4", "line-clamp-6", "line-clamp-8"],
   plugins: [],
 };

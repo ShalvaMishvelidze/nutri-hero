@@ -4,6 +4,9 @@ export enum HeadingSize {
   medium = "text-[22px] leading-[28px]",
   big = "text-[28px] leading-[32px]",
   _13 = "text-[13px] leading-[18px]",
+  _14_28 = "text-[14px] leading-[28px]",
+  _15_22 = "text-[15px] leading-[22px]",
+  _15_28 = "text-[15px] leading-[28px]",
   _16 = "text-[16px] leading-[28px] tracking-[0.01px]",
   _20 = "text-[20px] leading-[28px]",
   _30 = "text-[30px] leading-[32px]",
@@ -27,6 +30,7 @@ export enum Color {
   blue = "text-blue",
   gray = "text-gray-30",
   gray_44 = "text-gray-44",
+  gray_60 = "text-gray-60",
 }
 
 export enum Weight {

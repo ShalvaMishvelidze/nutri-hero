@@ -5,6 +5,7 @@ export enum ParagraphSize {
   medium = "text-[22px] leading-[28px] tracking-[0.01px]",
   _13_22 = "text-[13px] leading-[22px]",
   _14 = "text-[14px] leading-[18px]",
+  _18_31 = "text-[18px] leading-[31px]",
 }
 
 export enum Leading {
@@ -19,6 +20,7 @@ export enum MT {
   none = "mt-0",
   small = "mt-[10px]",
   normal = "mt-[20px]",
+  medium = "mt-[30px]",
   big = "mt-[50px]",
 }
 

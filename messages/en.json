@@ -515,6 +515,26 @@
       "date": "18 JAN 2019"
     }
   },
+  "single_blog": {
+    "1": {
+      "title": "How to meal prep your breakfast on a budget",
+      "author": "by Post Author",
+      "date": "18 JAN 2019",
+      "share": "Share",
+      "tweet": "Tweet",
+      "copy_link": "Copy link",
+      "paragraph": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Iaculis Purus Sed Leo Accumsan Mattis. Praesent Quis Laoreet Purus, Vel Rutrum Urna. Aliquam Vitae Eros Ligula. Nam Vestibulum Nulla Quis Purus Luctus Rutrum. Nam Vel Mollis Orci. Vestibulum Tristique Eget Libero At Mattis. Quisque Mollis Elit Vitae Erat Aliquam, Vel Fringilla Ligula Accumsan. Sed Finibus Cursus Fringilla. Nunc Sodales Feugiat Faucibus. Donec Sem Lorem, Luctus Non Finibus In, Condimentum Vitae Eros. Donec Semper Tempor Urna, Ac Auctor Velit Ultricies Et. Donec Cursus Sit Amet Dolor Sed Porttitor. Fusce libero dolor, venenatis eget enim sed, commodo efficitur arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce justo ipsum, placerat vitae erat ac, porttitor tincidunt lacus. In fermentum nulla nec fermentum tempus."
+    },
+    "2": {
+      "title": "Five rules for calisthenics",
+      "author": "by Post Author",
+      "date": "18 JAN 2019",
+      "share": "Share",
+      "tweet": "Tweet",
+      "copy_link": "Copy link",
+      "paragraph": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicula elit eu erat pulvinar, vel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sed vestibulum semper ligula, id accumsan orci ornare ut. Donec id pharetra nunc, ut sollicitudin mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam dapibus nisl at diam scelerisque luctus. Nam mattis, velit in malesuada maximus, erat ligula eleifend eros, et lacinia nunc ante vel odio. Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique. Nam fermentum, ipsum in suscipit pharetra, mi odio aliquet neque, non iaculis augue elit et libero. Phasellus tempor faucibus faucibus. Sed eu mauris sem. Etiam et varius felis. Donec et libero vitae mauris consectetur egestas. Fusce aliquet, augue non efficitur sodales, turpis nisl consectetur sem, at rutrum lectus libero quis elit. Suspendisse cursus laoreet sapien, in lobortis justo posuere vitae. Aliquam commodo posuere tellus in lacinia. Nullam ac eleifend odio. Donec aliquam semper tellus a condimentum."
+    }
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",
