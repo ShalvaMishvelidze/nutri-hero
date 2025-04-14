@@ -15,7 +15,9 @@ export enum HeadingSize {
 export enum MT {
   none = "mt-0",
   normal = "mt-[20px]",
+  medium = "mt-[30px]",
   big = "mt-[50px]",
+  _40 = "mt-[40px]",
   _60 = "mt-[60px]",
 }
 export enum MB {

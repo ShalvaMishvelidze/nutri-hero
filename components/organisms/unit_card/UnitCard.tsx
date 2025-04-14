@@ -1,13 +1,9 @@
 "use client";
 import { HeadingField } from "@/components/atoms/heading_field";
-import { Bg, TextColor } from "./ProgressHeaderCard.config";
+import { Bg, TextColor } from "./UnitCard.config";
 import { useState } from "react";
 import { EditBtn } from "./edit_btn";
-import {
-  bottom_container,
-  container,
-  text_container,
-} from "./ProgressHeaderCards.style";
+import { bottom_container, container, text_container } from "./UnitCard.style";
 
 const ProgressHeaderCard = ({
   heading,

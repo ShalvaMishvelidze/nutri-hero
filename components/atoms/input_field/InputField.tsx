@@ -7,6 +7,8 @@ const InputField = ({
   input_size = "full",
   h = "_60",
   placeholder,
+  value,
+  white,
   onChange,
   className,
   ...rest
@@ -14,14 +16,19 @@ const InputField = ({
   input_size?: keyof typeof InputSize;
   h?: keyof typeof H;
   type?: string;
+  value?: string;
   placeholder?: string;
+  white?: boolean;
 } & InputProps) => {
   return (
     <Input
       type={type}
+      value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className={`${className} ${InputSize[input_size]} ${H[h]} ${input_style}`}
+      className={`${className} ${InputSize[input_size]} ${
+        H[h]
+      } ${input_style} ${white && "!bg-white"}`}
       {...rest}
     />
   );

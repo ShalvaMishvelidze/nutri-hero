@@ -535,6 +535,96 @@
       "paragraph": "Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor quis consequat volutpat. Donec vehicula elit eu erat pulvinar, vel congue ex egestas. Praesent egestas purus dolor, a porta arcu pharetra quis. Sed vestibulum semper ligula, id accumsan orci ornare ut. Donec id pharetra nunc, ut sollicitudin mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam dapibus nisl at diam scelerisque luctus. Nam mattis, velit in malesuada maximus, erat ligula eleifend eros, et lacinia nunc ante vel odio. Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique. Nam fermentum, ipsum in suscipit pharetra, mi odio aliquet neque, non iaculis augue elit et libero. Phasellus tempor faucibus faucibus. Sed eu mauris sem. Etiam et varius felis. Donec et libero vitae mauris consectetur egestas. Fusce aliquet, augue non efficitur sodales, turpis nisl consectetur sem, at rutrum lectus libero quis elit. Suspendisse cursus laoreet sapien, in lobortis justo posuere vitae. Aliquam commodo posuere tellus in lacinia. Nullam ac eleifend odio. Donec aliquam semper tellus a condimentum."
     }
   },
+  "account": {
+    "user": {
+      "user_name": "Ruth Mendoza",
+      "days": "Days",
+      "exercises": "Exercises",
+      "meals": "Meals",
+      "navigation": {
+        "personal_details": "Personal Details",
+        "allergens": "Allergens",
+        "settings": "Settings",
+        "logout": "Logout"
+      }
+    },
+    "body_measurements": {
+      "title": "Body Measurements",
+      "1": {
+        "title": "Body Mass Index",
+        "unit": "Healthy"
+      },
+      "2": {
+        "title": "Height",
+        "unit": "cm"
+      },
+      "3": {
+        "title": "Weight",
+        "unit": "kg"
+      },
+      "4": {
+        "title": "Waist",
+        "unit": "cm"
+      },
+      "edit": "Edit",
+      "save": "Save",
+      "unit": "Unit of Measure",
+      "imperial": "Imperial",
+      "metric": "Metric"
+    },
+    "personal_details": {
+      "title": "Personal Details",
+      "username": "Username",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "date_of_birth": "Date of Birth"
+    },
+    "address": {
+      "title": "Address",
+      "address": "Address",
+      "city": "City",
+      "post_code": "Post Code"
+    },
+    "contact_details": {
+      "title": "Contact Details",
+      "phone": "Mobile Number",
+      "email": "Email Address",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "allergens": {
+      "title": "Allergens",
+      "paragraph": "Select the allergens you wish to exclude from your meal plan suggestions. Meals in the library do not exclude allergens unless you use the search filter.",
+      "on": "ON",
+      "off": "OFF",
+      "1": "Sesame Seeds",
+      "2": "Soy Beans",
+      "3": "Lupin",
+      "4": "Eggs",
+      "5": "Molluscs",
+      "6": "Milk",
+      "7": "Peanuts",
+      "8": "Mustard",
+      "9": "Sulphur Dioxide",
+      "10": "Tree Nuts",
+      "11": "Celery",
+      "12": "Glutten",
+      "13": "Crutaceans",
+      "14": "Fish",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "settings": {
+      "payment_method": "Payment Method",
+      "subscription": "Your subscription is active",
+      "paragraph": "If you cancel your plan now you will be able to continue using Nutriheros until 31/05/2020",
+      "customer_id": "Customer ID: 029819",
+      "btn": "Cancel Subscription"
+    }
+  },
   "footer": {
     "copyright": "Copyright Nutriheos",
     "explore": "Explore",

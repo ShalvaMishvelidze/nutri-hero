@@ -53,3 +53,7 @@ body .ant-select .ant-select-selector {
 .workout-swiper .swiper-wrapper {
   padding-bottom: 30px;
 }
+
+.allergens-container .ant-switch-checked {
+  background: #80334b !important;
+}

@@ -12,6 +12,8 @@ export enum Mb {
   none = "mb-0",
   medium = "mb-[27px]",
   big = "mb-[40px]",
+  _10 = "mb-[10px]",
+  _20 = "mb-[20px]",
 }
 
 export enum Color {
