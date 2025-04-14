@@ -58,7 +58,12 @@ const Settings = () => {
           className="size-[22px] cursor-pointer"
         />
       </div>
-      <TitleField title_size="_22" mb="_10" weight="bold">
+      <TitleField
+        styleClassName="mt-[30px]"
+        title_size="_22"
+        mb="_10"
+        weight="bold"
+      >
         {t("subscription")}
       </TitleField>
       <ParagraphField
