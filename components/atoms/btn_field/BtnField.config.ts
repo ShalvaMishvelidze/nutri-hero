@@ -23,6 +23,7 @@ export enum M_top {
   medium = "!mt-[45px]",
   big = "!mt-[94px]",
   huge = "!mt-[135px]",
+  _10 = "!mt-[10px]",
 }
 export enum M_left {
   none = "!ml-0",

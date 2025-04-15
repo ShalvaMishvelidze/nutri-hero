@@ -8,6 +8,7 @@ export enum HeadingSize {
   _15_22 = "text-[15px] leading-[22px]",
   _15_28 = "text-[15px] leading-[28px]",
   _16 = "text-[16px] leading-[28px] tracking-[0.01px]",
+  _18_20 = "text-[18px] leading-[20px]",
   _20 = "text-[20px] leading-[28px]",
   _30 = "text-[30px] leading-[32px]",
 }

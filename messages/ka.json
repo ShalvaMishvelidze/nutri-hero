@@ -625,6 +625,33 @@
       "btn": "გამოწერის გაუქმება"
     }
   },
+  "contact": {
+    "title": "კონტაქტი",
+    "accordion": {
+      "title": "ხშირად დასმული კითხვები",
+      "1": {
+        "question": "როგორ დავასრულო ვარჯიში?",
+        "answer": "Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec interdum, lectus in convallis pulvinar, enim elit porta sapien, vel finibus erat felis sed neque. Etiam aliquet neque sagittis erat tincidunt aliquam."
+      },
+      "2": {
+        "question": "შემიძლია ჩემი მიზნის შეცვლა?",
+        "answer": "Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec interdum, lectus in convallis pulvinar, enim elit porta sapien, vel finibus erat felis sed neque. Etiam aliquet neque sagittis erat tincidunt aliquam."
+      },
+      "3": {
+        "question": "როგორ დავასრულო ვარჯიში?",
+        "answer": "Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec interdum, lectus in convallis pulvinar, enim elit porta sapien, vel finibus erat felis sed neque. Etiam aliquet neque sagittis erat tincidunt aliquam."
+      }
+    },
+    "get_in_touch": {
+      "title": "დაგვიკავშირდით",
+      "paragraph": "ჩვენი გუნდის წევრი მალე დაგიკავშირდებათ",
+      "email": "ელფოსტა",
+      "name": "თქვენი სახელი",
+      "subject": "თემა",
+      "message": "მესიჯი",
+      "btn": "გაგზავნა"
+    }
+  },
   "footer": {
     "copyright": "საავტორო უფლება",
     "explore": "გამოკვლევა",
