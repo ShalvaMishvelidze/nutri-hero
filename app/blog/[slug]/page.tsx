@@ -6,7 +6,11 @@ const SingleBlog = () => {
   return (
     <section className={container}>
       <SingleBlogOrganism key={"single_blog_1"} index={1} />
-      <SingleBlogOrganism key={"single_blog_2"} index={2} />
+      <SingleBlogOrganism
+        key={"single_blog_2"}
+        index={2}
+        splitParagraphIntoBlocksNumber={2}
+      />
     </section>
   );
 };

@@ -33,13 +33,12 @@ const TermsAndConditions = () => {
       {blocks.map((block, index) => {
         return (
           <ParagraphField
-            key={index}
+            key={`term_paragraph_${index}`}
             heading_size="_18_31"
             weight="normal"
             mt="medium"
           >
             {block}
-            {/* {t("paragraph")} */}
           </ParagraphField>
         );
       })}

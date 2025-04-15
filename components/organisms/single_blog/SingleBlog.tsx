@@ -5,6 +5,7 @@ import SocialsContainer from "./socials_container/SocialsContainer";
 import Image from "next/image";
 import { ImgH } from "./SingleBlog.config";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
+import { splitParagraphIntoBlocks } from "@/utils";
 
 const header_container =
   "py-[23px] border-t-[2px] border-b-[2px] border-blue-5";
@@ -12,11 +13,18 @@ const header_container =
 const SingleBlog = ({
   index,
   imgH = "normal",
+  splitParagraphIntoBlocksNumber = 1,
 }: {
   index: number;
   imgH?: keyof typeof ImgH;
+  splitParagraphIntoBlocksNumber?: number;
 }) => {
   const t = useTranslations(`single_blog.${index}`);
+
+  const blocks = splitParagraphIntoBlocks(
+    t("paragraph"),
+    splitParagraphIntoBlocksNumber
+  );
   return (
     <article className="mt-[40px]">
       <div className={header_container}>
@@ -50,9 +58,18 @@ const SingleBlog = ({
         height={ImgH[imgH]}
         className={`w-full h-[${ImgH[imgH]}px] object-cover mt-[50px] rounded-[5px]`}
       />
-      <ParagraphField heading_size="_18_31" weight="normal" mt="medium">
-        {t("paragraph")}
-      </ParagraphField>
+      {blocks.map((block, idx) => {
+        return (
+          <ParagraphField
+            key={`blog_paragraph_${index}_${idx}`}
+            heading_size="_18_31"
+            weight="normal"
+            mt="medium"
+          >
+            {block}
+          </ParagraphField>
+        );
+      })}
     </article>
   );
 };
