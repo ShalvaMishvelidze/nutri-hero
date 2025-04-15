@@ -14,7 +14,11 @@ const HeaderBtnContainer = () => {
         </BtnField>
       </Link>
       <Link href="/login">
-        <BtnField btn_size="auto" m_top="none" bg="empty">
+        <BtnField
+          styleClassName="!bg-transparent [&_span]:!text-purple max-xm:!bg-purple max-xm:[&_span]:!text-white"
+          btn_size="small"
+          m_top="none"
+        >
           {t("login")}
         </BtnField>
       </Link>

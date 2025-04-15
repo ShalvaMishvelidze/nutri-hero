@@ -18,7 +18,7 @@ const Slider = ({
   const carouselRef = useRef<CarouselRef>(null);
 
   return (
-    <section className={container}>
+    <section className={container} id="expertise">
       <Carousel
         ref={carouselRef}
         slidesPerRow={1}

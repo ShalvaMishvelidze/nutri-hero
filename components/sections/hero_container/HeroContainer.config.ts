@@ -11,7 +11,7 @@ export enum Pb {
 
 export enum H {
   small = "h-[360px]",
-  regular = "h-[720px]",
+  regular = "h-[720px] max-xm:h-[480px]",
   max = "h-[calc(100vh-80px)]",
   full = "h-full",
 }

@@ -4,6 +4,7 @@ export enum Btn_Size {
   tiny = "!w-[30px] !p-0",
   small = "!min-w-[70px] !px-[12px]",
   medium = "!min-w-[154px] !px-[24px]",
+  big = "!min-w-[324px] max-xm:!min-w-[200px] !px-[24px]",
   full = "!w-full !px-[12px]",
   _59 = "!min-w-[59px] !px-[12px]",
   _88 = "!w-[88px]",

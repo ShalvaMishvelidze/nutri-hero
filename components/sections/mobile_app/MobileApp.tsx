@@ -8,7 +8,7 @@ const MobileApp = () => {
   const t = useTranslations("mobile_app");
 
   return (
-    <section className={container}>
+    <section id="mobile_app" className={container}>
       <Image
         className={img_style}
         src={"/woman-with-phone.png"}

@@ -1,17 +1,12 @@
 "use client";
 import { useTranslations } from "next-intl";
-import {
-  btn_style,
-  container,
-  content_container,
-  img_style,
-} from "./Nutrition.style";
+import { container, content_container, img_style } from "./Nutrition.style";
 import { useState } from "react";
 import { MiniNavWrapper } from "../mini_nav_wrapper";
 import { CardText } from "@/components/molecules/card_text";
-import { Btn } from "@/components/atoms/btn";
 import Image from "next/image";
 import { ArrowRightSVGIcon } from "@/components/icons";
+import { BtnField } from "@/components/atoms/btn_field";
 
 const Nutrition = () => {
   const t = useTranslations("landing_exercise");
@@ -23,7 +18,7 @@ const Nutrition = () => {
   ];
 
   return (
-    <div className={container}>
+    <div id="nutrition" className={container}>
       <div className={content_container}>
         <MiniNavWrapper
           selectedKey={selectedKey}
@@ -44,10 +39,10 @@ const Nutrition = () => {
             );
           }
         })}
-        <Btn type="text" className={btn_style}>
+        <BtnField bg="empty" styleClassName="!text-white">
           {t("read_more")}
           <ArrowRightSVGIcon />
-        </Btn>
+        </BtnField>
       </div>
       <Image
         src={"/salad.png"}

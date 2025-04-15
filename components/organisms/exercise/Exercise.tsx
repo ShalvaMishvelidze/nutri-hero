@@ -19,7 +19,7 @@ const Exercise = () => {
 
   return (
     <ModalWrapper styleClassNames="pb-[40px] pt-[35px] top-[-72px]">
-      <div className={container}>
+      <div id="exercise" className={container}>
         <MiniNavWrapper
           selectedKey={selectedKey}
           setSelectedKey={setSelectedKey}
@@ -32,6 +32,7 @@ const Exercise = () => {
             alt="women in a gym"
             width={409}
             height={271}
+            className="w-[409px] h-[271px] object-cover max-xm:w-full rounded-[10px] max-sm:h-[200px]"
           />
           {nav_links.map((link, index) => {
             if (selectedKey === index) {

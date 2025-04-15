@@ -1,11 +1,12 @@
 export enum Title_size {
-  medium = "text-[34px] max-sm:text-[20px] leading-[41px] max-sm:leading-[28px] tracking-[0.01px]",
-  big = "text-[45px] max-sm:text-[24px] leading-[54px] max-sm:leading-[30px]",
-  bigger = "text-[50px] max-sm:text-[28px] leading-[68px] max-sm:leading-[34px] tracking-[0.02px]",
-  biggest = "text-[60px] max-sm:text-[32px] leading-[74px] max-sm:leading-[39px] tracking-[0.02px]",
+  medium = "text-[34px] max-xm:text-[20px] leading-[41px] max-xm:leading-[28px] tracking-[0.01px]",
+  big = "text-[45px] max-xm:text-[24px] leading-[54px] max-xm:leading-[30px]",
+  bigger = "text-[50px] max-xm:text-[28px] leading-[68px] max-xm:leading-[34px] tracking-[0.02px]",
+  biggest = "text-[60px] max-xm:text-[32px] leading-[74px] max-xm:leading-[39px] tracking-[0.02px]",
   giant = "text-[80px] leading-[92px] tracking-[0.03px]",
-  _22 = "text-[22px] max-sm:text-[16px] leading-[28px] max-sm:leading-[20px] tracking-[0.01px]",
-  _50_60 = "text-[50px] max-sm:text-[28px] leading-[60px] max-sm:leading-[34px] tracking-[0.02px]",
+  _22 = "text-[22px] max-xm:text-[16px] leading-[28px] max-xm:leading-[20px] tracking-[0.01px]",
+  _42_52 = "text-[42px] max-xm:text-[22px] leading-[52px] max-xm:leading-[28px]",
+  _50_60 = "text-[50px] max-xm:text-[28px] leading-[60px] max-xm:leading-[34px] tracking-[0.02px]",
 }
 
 export enum Mb {

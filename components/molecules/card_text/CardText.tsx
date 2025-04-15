@@ -1,7 +1,7 @@
-import { CardTextTitle } from "@/components/atoms/card_text_title";
-import { CardTextHeading } from "./card_text_heading";
-import { CardTextParagraph } from "./card_text_paragraph";
+import { TitleField } from "@/components/atoms/registration_title";
 import { container } from "./CardText.style";
+import { HeadingField } from "@/components/atoms/heading_field";
+import { ParagraphField } from "@/components/atoms/paragraph_field";
 
 const CardText = ({
   title,
@@ -16,9 +16,27 @@ const CardText = ({
 }) => {
   return (
     <div className={`${container} ${is_light && "mt-[30px]"}`}>
-      {title && <CardTextTitle>{title}</CardTextTitle>}
-      <CardTextHeading is_light={is_light}>{heading}</CardTextHeading>
-      <CardTextParagraph is_light={is_light}>{paragraph}</CardTextParagraph>
+      {title && (
+        <TitleField mb="none" title_size="_42_52" weight="bold">
+          {title}
+        </TitleField>
+      )}
+      <HeadingField
+        mt="none"
+        heading_size="medium"
+        weight="medium"
+        color={is_light ? "white" : "black"}
+      >
+        {heading}
+      </HeadingField>
+      <ParagraphField
+        mt="none"
+        heading_size="_16_24"
+        weight="normal"
+        color={is_light ? "white" : "black"}
+      >
+        {paragraph}
+      </ParagraphField>
     </div>
   );
 };

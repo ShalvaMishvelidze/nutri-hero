@@ -1,18 +1,29 @@
-import { LandingParagraph } from "@/components/atoms/landing_paragraph";
 import { container } from "./LandingHero.style";
-import { Btn } from "@/components/atoms/btn";
-import { LandingHeading } from "@/components/atoms/landing_heading";
 import { useTranslations } from "next-intl";
+import { TitleField } from "@/components/atoms/registration_title";
+import { ParagraphField } from "@/components/atoms/paragraph_field";
+import { BtnField } from "@/components/atoms/btn_field";
+import Link from "next/link";
 
 const LandingHero = () => {
   const t = useTranslations("landing_hero");
   return (
     <div className={container}>
-      <LandingHeading>{t("heading")}</LandingHeading>
-      <LandingParagraph>{t("paragraph")}</LandingParagraph>
-      <Btn className="[body_&]:mt-[50px] [body_&]:w-[324px] [body_&]:h-[50px] [body_&]:bg-purple [body_&]:text-white [body_&]:rounded-[5px] [body_&]:border-box">
-        {t("button")}
-      </Btn>
+      <TitleField
+        styleClassName="max-w-[600px] text-center px-[30px]"
+        textCase="capitalize"
+        title_size="biggest"
+        weight="bold"
+        mb="_10"
+      >
+        {t("heading")}
+      </TitleField>
+      <ParagraphField weight="normal" heading_size="_22_28" mt="none">
+        {t("paragraph")}
+      </ParagraphField>
+      <BtnField btn_size="big">
+        <Link href={"/registration"}>{t("button")}</Link>
+      </BtnField>
     </div>
   );
 };

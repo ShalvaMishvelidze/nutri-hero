@@ -12,13 +12,17 @@ const FooterNavContainer = () => {
     <div className={container}>
       <Nav heading="explore" links={explore_links} />
       <Nav heading="company" links={company_links} is_logged_in />
-      <Nav heading="blog" links={blog_links} is_logged_in />
-      <Nav
-        heading="social"
-        links={social_links}
-        is_logged_in
-        has_external_links
-      />
+      <div className="max-sm:hidden">
+        <Nav heading="blog" links={blog_links} is_logged_in />
+      </div>
+      <div className="max-sm:hidden">
+        <Nav
+          heading="social"
+          links={social_links}
+          is_logged_in
+          has_external_links
+        />
+      </div>
     </div>
   );
 };

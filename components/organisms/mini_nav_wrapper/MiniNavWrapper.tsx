@@ -1,6 +1,7 @@
 import { MiniNavHeading } from "@/components/atoms/mini_nav_heading";
 import { MiniNav } from "@/components/molecules/mini_nav";
 import { container, light_container } from "./MiniNavWrapper.style";
+import { Dispatch, SetStateAction } from "react";
 
 const MiniNavWrapper = ({
   selectedKey,
@@ -10,7 +11,7 @@ const MiniNavWrapper = ({
   heading,
 }: {
   selectedKey: number;
-  setSelectedKey: (key: number) => void;
+  setSelectedKey: Dispatch<SetStateAction<number>>;
   is_light?: boolean;
   nav_links: string[];
   heading: string;
