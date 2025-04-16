@@ -5,7 +5,7 @@ import { container } from "./FooterLeft.style";
 const FooterLeft = () => {
   return (
     <div className={container}>
-      <StoresContainer />
+      <StoresContainer storeStyles="w-full" />
       <Copyright />
     </div>
   );
