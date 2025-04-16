@@ -8,8 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLayoutEffect, useState } from "react";
 
-const section = `max-w-[1280px] mx-auto`;
-const section_container = `max-w-[664px] mx-auto`;
+const section = `max-w-[1280px] mx-auto `;
+const section_container = `max-w-[664px] max-m:px-[30px] mx-auto`;
 const container = `flex flex-col gap-[15px]`;
 const item = `flex justify-between items-center border border-blue-5 rounded-[5px] h-[50px] px-[20px]`;
 const img_container = `flex gap-[10px]`;
