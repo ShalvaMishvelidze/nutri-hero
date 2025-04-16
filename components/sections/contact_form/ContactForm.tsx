@@ -2,7 +2,7 @@
 import { BtnField } from "@/components/atoms/btn_field";
 import { InputField } from "@/components/atoms/input_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { Form } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useTranslations } from "next-intl";

@@ -2,7 +2,7 @@
 import { DateInput } from "@/components/atoms/date_input";
 import { GenderSelect } from "@/components/atoms/gender_select";
 import { InputField } from "@/components/atoms/input_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { Form } from "antd";
 import { useTranslations } from "next-intl";
 

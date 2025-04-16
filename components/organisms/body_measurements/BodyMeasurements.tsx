@@ -1,4 +1,4 @@
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import { UnitCard } from "../unit_card";
 import { HeadingField } from "@/components/atoms/heading_field";

@@ -1,6 +1,6 @@
 import { HeadingField } from "@/components/atoms/heading_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ImgH, LineLimit } from "./MasonryCard.config";

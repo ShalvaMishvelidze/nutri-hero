@@ -1,4 +1,4 @@
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { MasonryCard } from "@/components/organisms/masonry_card";
 import { HeroContainer } from "@/components/sections/hero_container";
 import { useTranslations } from "next-intl";

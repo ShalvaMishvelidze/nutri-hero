@@ -1,4 +1,4 @@
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { container } from "./CardText.style";
 import { HeadingField } from "@/components/atoms/heading_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";

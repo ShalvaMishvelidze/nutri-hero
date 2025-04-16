@@ -8,7 +8,7 @@ import {
 } from "./MyPlanHero.style";
 import { BtnField } from "@/components/atoms/btn_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 

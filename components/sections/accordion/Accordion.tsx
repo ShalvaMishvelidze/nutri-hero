@@ -1,5 +1,5 @@
 "use client";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import { QuestionAnswer } from "./question_answer";
 

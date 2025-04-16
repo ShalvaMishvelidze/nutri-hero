@@ -1,5 +1,5 @@
 import { HeadingField } from "@/components/atoms/heading_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import SocialsContainer from "./socials_container/SocialsContainer";
 import Image from "next/image";

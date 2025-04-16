@@ -1,7 +1,7 @@
 "use client";
 import { BtnField } from "@/components/atoms/btn_field";
 import { HeadingField } from "@/components/atoms/heading_field";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 

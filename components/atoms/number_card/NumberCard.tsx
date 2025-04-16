@@ -1,5 +1,5 @@
 import { HeadingField } from "../heading_field";
-import { TitleField } from "../registration_title";
+import { TitleField } from "../registration_field";
 import { Color } from "./NumberCard.config";
 import { number_cards } from "./NumberCard.style";
 

@@ -8,7 +8,7 @@ import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { setIsLoggedInCookie } from "@/actions";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { Form } from "antd";
 import { InputField } from "@/components/atoms/input_field";
 import { BtnField } from "@/components/atoms/btn_field";

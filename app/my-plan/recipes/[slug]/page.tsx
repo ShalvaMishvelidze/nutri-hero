@@ -1,7 +1,7 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import { getLocale } from "@/actions";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { Recipes } from "@/components/sections/recipes";
 import { getNext30Days } from "@/utils";
 import { getTranslations } from "next-intl/server";

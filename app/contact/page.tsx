@@ -1,4 +1,4 @@
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { Accordion } from "@/components/sections/accordion";
 import { ContactForm } from "@/components/sections/contact_form";
 import { HeroContainer } from "@/components/sections/hero_container";

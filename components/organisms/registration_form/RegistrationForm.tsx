@@ -26,7 +26,7 @@ const RegistrationForm = () => {
 
   const onFinish = (values: Record<string, unknown>) => {
     console.log("onFinish:", values);
-    router.push("/registration/password-reset");
+    router.push("/registration/password");
   };
 
   return (

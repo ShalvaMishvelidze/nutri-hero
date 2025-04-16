@@ -1,5 +1,5 @@
-import { RegistrationParagraph } from "@/components/atoms/registration_paragraph";
-import { TitleField } from "@/components/atoms/registration_title";
+import { ParagraphField } from "@/components/atoms/paragraph_field";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,14 @@ const Success = () => {
       />
       <div className="flex flex-col w-1/2 pr-[60px]">
         <TitleField>{t("title")}</TitleField>
-        <RegistrationParagraph>{t("paragraph")}</RegistrationParagraph>
+        <ParagraphField
+          weight="normal"
+          heading_size="tiny"
+          mt="small"
+          color="gray_60"
+        >
+          {t("paragraph")}
+        </ParagraphField>
         <Link
           href="#"
           className="text-[16px] leading-[22px] text-purple mt-[100px]"

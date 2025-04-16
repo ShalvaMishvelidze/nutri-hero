@@ -1,5 +1,5 @@
 "use client";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { VideoContainer } from "../video_container";
 import { IconsContainer } from "@/components/molecules/icons_container";
 import Image from "next/image";

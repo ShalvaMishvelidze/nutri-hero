@@ -1,6 +1,6 @@
 "use client";
 import { MiniNav } from "@/components/molecules/mini_nav";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { useState } from "react";
 import GridCard from "@/components/organisms/grid_card/GridCard";
 import { Swiper, SwiperSlide } from "swiper/react";

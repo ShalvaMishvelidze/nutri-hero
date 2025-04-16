@@ -1,6 +1,6 @@
 import { container } from "./LandingHero.style";
 import { useTranslations } from "next-intl";
-import { TitleField } from "@/components/atoms/registration_title";
+import { TitleField } from "@/components/atoms/registration_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { BtnField } from "@/components/atoms/btn_field";
 import Link from "next/link";
