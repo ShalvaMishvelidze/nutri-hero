@@ -17,7 +17,7 @@ const Sidebar = ({
   return (
     <nav
       className={`absolute hidden max-xm:flex top-[80px] left-0 w-full bg-white shadow-md flex-col gap-[20px] justify-center items-end [&_a]:w-max px-[30px] transition-h duration-[400ms] overflow-hidden ${
-        aside ? "h-[280px]" : "h-0"
+        aside ? "h-[320px]" : "h-0"
       }`}
     >
       {is_logged_in

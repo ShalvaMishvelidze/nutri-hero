@@ -58,7 +58,7 @@ const LoggedInHeader = () => {
             <SidebarSvg />
           </BtnField>
         </div>
-        <Sidebar aside={aside} />
+        <Sidebar is_logged_in aside={aside} />
       </div>
     </section>
   );
