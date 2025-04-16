@@ -1,11 +1,12 @@
 "use client";
-import { InputPrimary } from "@/components/atoms/input_primary";
-import { ModalBtn } from "@/components/atoms/modal_btn";
-import { ModalHeading } from "@/components/atoms/modal_heading";
+import { BtnField } from "@/components/atoms/btn_field";
+import { InputField } from "@/components/atoms/input_field";
 import { ModalParagraph } from "@/components/atoms/modal_paragraph";
+import { TitleField } from "@/components/atoms/registration_title";
+import { Form } from "antd";
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Dispatch, FormEvent, SetStateAction, useState } from "react";
+import { Dispatch, FormEvent, SetStateAction } from "react";
 const ResetPasswordForm = ({
   slideInVariants,
   setStep,
@@ -14,7 +15,6 @@ const ResetPasswordForm = ({
   setStep: Dispatch<SetStateAction<"login" | "reset_password">>;
 }) => {
   const t = useTranslations("password_reset");
-  const [email, setEmail] = useState("");
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -31,18 +31,23 @@ const ResetPasswordForm = ({
       className="w-full"
     >
       <form onSubmit={handleSubmit} className="w-[324px] ">
-        <ModalHeading>{t("heading")}</ModalHeading>
+        <TitleField
+          mb="medium"
+          title_size="_22"
+          styleClassName="text-center max-xm:max-w-[200px] mx-auto "
+          weight="bold"
+        >
+          {t("heading")}
+        </TitleField>
         <ModalParagraph>{t("paragraph")}</ModalParagraph>
-        <InputPrimary
-          name="email"
-          type="email"
-          value={email}
-          placeholder={t("email")}
-          handleChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
-        <ModalBtn onClick={() => setStep("login")}>{t("button")}</ModalBtn>
+        <Form>
+          <Form.Item name="email">
+            <InputField placeholder={t("email")} />
+          </Form.Item>
+          <BtnField htmlType="submit" onClick={() => setStep("login")}>
+            {t("button")}
+          </BtnField>
+        </Form>
       </form>
     </motion.div>
   );

@@ -7,12 +7,12 @@ import { LoginForm } from "@/components/organisms/login";
 import { ResetPasswordForm } from "@/components/organisms/reset_password_form";
 
 const slideInVariants = {
-  login: {
+  reset_password: {
     hidden: { x: "100%", opacity: 0 },
     visible: { x: 0, opacity: 1 },
     exit: { x: "100%", opacity: 0 },
   },
-  reset_password: {
+  login: {
     hidden: { x: "-100%", opacity: 0 },
     visible: { x: 0, opacity: 1 },
     exit: { x: "-100%", opacity: 0 },
@@ -23,13 +23,13 @@ const Login = () => {
   const [step, setStep] = useState<"login" | "reset_password">("login");
 
   return (
-    <HeroContainer childrenWidth="max">
+    <HeroContainer childrenWidth="max" styleClassName="max-sm:px-[30px]">
       <motion.div
         layout
         className="relative overflow-hidden transition-all duration-300"
       >
         <AnimatePresence mode="wait">
-          <ModalWrapper styleClassNames="pt-[50px] pb-[42px] flex justify-center">
+          <ModalWrapper styleClassNames="pt-[50px] max-xm:py-[30px] pb-[42px] max-xm:px-[50px] flex justify-center max-sm:px-[30px]">
             {step === "login" && (
               <LoginForm
                 slideInVariants={slideInVariants.login}
