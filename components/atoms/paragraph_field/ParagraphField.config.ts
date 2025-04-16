@@ -6,6 +6,7 @@ export enum ParagraphSize {
   _12_22 = "text-[12px] leading-[22px] max-xm:text-[12px] max-xm:leading-[18px]",
   _13_22 = "text-[13px] leading-[22px] max-xm:text-[12px] max-xm:leading-[18px]",
   _14 = "text-[14px] leading-[18px] max-xm:text-[12px] max-xm:leading-[16px]",
+  _16_22 = "text-[16px] leading-[22px] max-xm:text-[13px] max-xm:leading-[18px]",
   _16_24 = "text-[16px] leading-[24px] max-xm:text-[13px] max-xm:leading-[18px]",
   _16_31 = "text-[16px] leading-[31px] max-xm:text-[13px] max-xm:leading-[22px]",
   _18_31 = "text-[18px] leading-[31px] max-xm:text-[14px] max-xm:leading-[22px]",
@@ -28,6 +29,7 @@ export enum MT {
   medium = "mt-[30px]",
   big = "mt-[50px]",
   _15 = "mt-[15px]",
+  _100 = "mt-[100px]",
 }
 
 export enum Weight {
