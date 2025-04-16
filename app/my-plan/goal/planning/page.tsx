@@ -11,7 +11,11 @@ import { HeadingField } from "@/components/atoms/heading_field";
 import { InputField } from "@/components/atoms/input_field";
 import { setGoal } from "@/actions";
 
-const radio_container = `!flex flex-col gap-[28px] border-none outline-none`;
+const container =
+  "max-w-[1280px] w-full mx-auto flex justify-center items-center gap-[101px] max-lg:gap-[50px] overflow-hidden";
+const radio_container = "!flex flex-col gap-[28px] border-none outline-none";
+const carousel_container =
+  "!w-1/2 pr-[140px] max-lg:pr-[50px] max-xm:!w-full max-xm:px-[30px] max-xm:py-[60px] max-xm:max-w-[500px]";
 
 type Section_Type = 0 | 1 | 2 | 3;
 
@@ -52,15 +56,15 @@ const Planning = () => {
   };
 
   return (
-    <section className="max-w-[1280px] w-full mx-auto flex justify-center items-center gap-[101px]">
+    <section className={container}>
       <Image
-        className="w-1/2 object-cover"
+        className="!w-1/2 min-h-[700px] object-contain max-xm:hidden"
         src={`/goal-${section + 1}.png`}
         alt="salad"
         width={632}
         height={720}
       />
-      <div className="!w-1/2 pr-[140px]">
+      <div className={carousel_container}>
         <GoalNav
           carouselRef={carouselRef}
           section={section}
@@ -155,13 +159,14 @@ const Planning = () => {
             </div>
           </Carousel>
 
-          <div className="flex justify-end items-center gap-[16px] mt-[75px]">
+          <div className="flex justify-end items-center gap-[16px] mt-[75px] max-xm:mt-[30px]">
             {section !== 0 && (
               <BtnField
                 m_top="none"
                 bg="light"
                 btn_size="medium"
                 onClick={() => handleClick("prev")}
+                styleClassName="max-xm:!w-full"
               >
                 {t("btns.back")}
               </BtnField>
@@ -171,13 +176,19 @@ const Planning = () => {
                 m_top="none"
                 btn_size="medium"
                 onClick={() => handleClick("next")}
+                styleClassName="max-xm:!w-full"
               >
                 {t("btns.next")}
               </BtnField>
             )}
             {section === 3 && (
-              <Form.Item className="!w-auto">
-                <BtnField m_top="none" btn_size="medium" htmlType="submit">
+              <Form.Item className="!w-auto max-xm:!w-full">
+                <BtnField
+                  m_top="none"
+                  styleClassName="max-xm:!w-full"
+                  btn_size="medium"
+                  htmlType="submit"
+                >
                   {t("btns.done")}
                 </BtnField>
               </Form.Item>

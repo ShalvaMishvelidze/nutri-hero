@@ -87,6 +87,7 @@ const RegistrationForm = () => {
               name="terms"
               radioJustify="between"
               w="full"
+              childrenAreString={false}
             />
           </div>
         </Form.Item>

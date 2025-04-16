@@ -22,7 +22,7 @@ const RadioInputs = ({
   form,
   not_required,
   radioMaxLength,
-  childrenAreString = false,
+  childrenAreString = true,
   headingGap = "normal",
   radioGroupHeight = "auto",
   radioInputGap = "normal",
