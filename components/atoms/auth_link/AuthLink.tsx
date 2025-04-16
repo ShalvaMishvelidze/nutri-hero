@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { container, link_style, text_style } from "./AuthLink.style";
+import { container, link_style } from "./AuthLink.style";
+import { ParagraphField } from "../paragraph_field";
 
 const AuthLink = ({
   text,
@@ -12,10 +13,18 @@ const AuthLink = ({
 }) => {
   return (
     <div className={container}>
-      <p className={text_style}>{text}</p>
-      <Link className={link_style} href={link}>
-        {link_text}
-      </Link>
+      <ParagraphField
+        heading_size="_14"
+        mt="none"
+        weight="normal"
+        color="light_purple"
+        styleClassName="text-center"
+      >
+        {text}{" "}
+        <Link className={link_style} href={link}>
+          {link_text}
+        </Link>
+      </ParagraphField>
     </div>
   );
 };

@@ -11,6 +11,7 @@ const HeroContainer = ({
   overlay = false,
   childrenWidth = "full",
   h = "regular",
+  styleClassName = "",
 }: {
   children: ReactNode;
   img_url?: string;
@@ -19,12 +20,15 @@ const HeroContainer = ({
   overlay?: boolean;
   childrenWidth?: keyof typeof ChildrenWidth;
   h?: keyof typeof H;
+  styleClassName?: string;
 }) => {
   return (
-    <div className={`${container} ${Items[items]} ${Pb[pb]} ${H[h]}`}>
+    <div
+      className={`${container} ${Items[items]} ${Pb[pb]} ${H[h]} ${styleClassName}`}
+    >
       <HeroImage img_url={img_url} />
       <div
-        className={`relative z-50 max-w-[1280px] ${ChildrenWidth[childrenWidth]}`}
+        className={`relative z-50 max-w-[1280px] max-xl:px-[30px] ${ChildrenWidth[childrenWidth]}`}
       >
         {children}
       </div>

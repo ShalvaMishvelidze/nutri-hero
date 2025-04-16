@@ -3,6 +3,7 @@ export enum ParagraphSize {
   small = "text-[16px] leading-[20px] max-xm:text-[13px] max-xm:leading-[18px]",
   normal = "text-[19px] leading-[22px] max-xm:text-[14px] max-xm:leading-[20px]",
   medium = "text-[22px] leading-[28px] tracking-[0.01px] max-xm:text-[16px] max-xm:leading-[22px]",
+  _12_22 = "text-[12px] leading-[22px] max-xm:text-[12px] max-xm:leading-[18px]",
   _13_22 = "text-[13px] leading-[22px] max-xm:text-[12px] max-xm:leading-[18px]",
   _14 = "text-[14px] leading-[18px] max-xm:text-[12px] max-xm:leading-[16px]",
   _16_24 = "text-[16px] leading-[24px] max-xm:text-[13px] max-xm:leading-[18px]",
@@ -42,6 +43,7 @@ export enum Color {
   gray = "text-gray-30 opacity-90",
   light_blue = "text-blue-5",
   purple = "text-purple",
+  light_purple = "text-purple-30",
   dark_gray = "text-gray-50",
   gray_60 = "text-gray-60",
 }

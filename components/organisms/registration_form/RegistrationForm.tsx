@@ -1,25 +1,23 @@
 import {
   registration_input,
   small_container,
-  terms_checkbox,
   terms_container,
-  terms_link,
-  terms_text,
-  terms_text_container,
 } from "./RegistrationForm.style";
 import { useState } from "react";
 import { ModalLink } from "@/components/atoms/modal_link";
 import { AuthLink } from "@/components/atoms/auth_link";
 import { useTranslations } from "next-intl";
-import { ModalBtn } from "@/components/atoms/modal_btn";
 import Link from "next/link";
 import Image from "next/image";
 import { Form, Input } from "antd";
+import { RadioInputs } from "../radio_inputs";
+import { ParagraphField } from "@/components/atoms/paragraph_field";
+import { BtnField } from "@/components/atoms/btn_field";
 
 const RegistrationForm = () => {
+  const [form] = Form.useForm();
   const t = useTranslations("registration");
   const [email, setEmail] = useState("");
-  const [checked, setChecked] = useState(false);
 
   const onValuesChange = (
     changedValues: Record<string, unknown>,
@@ -34,11 +32,12 @@ const RegistrationForm = () => {
 
   return (
     <Form
+      form={form}
       name="basic"
       onFinish={onFinish}
       onValuesChange={onValuesChange}
       autoComplete="off"
-      className="w-[324px]"
+      className="w-[324px] max-xm:w-8/12 max-sm:w-full"
     >
       <div className={small_container}>
         <Form.Item
@@ -71,32 +70,33 @@ const RegistrationForm = () => {
           className="[body_&]:mb-0"
         >
           <div className="flex items-center justify-between">
-            <div className={terms_text_container}>
-              <p className={terms_text}>{t("i_have")}</p>
-              <Link className={terms_link} href="#">
-                {t("terms")}
-              </Link>
-            </div>
-            <div
-              className={`${terms_checkbox} ${checked && "border-blue"}`}
-              onClick={() => setChecked(!checked)}
-            >
-              {checked && (
-                <Image
-                  src={"checked.svg"}
-                  alt="checked"
-                  width={15}
-                  height={15}
-                />
-              )}
-            </div>
+            <RadioInputs
+              paragraphs={[
+                <ParagraphField
+                  key={"custom_registration_radio"}
+                  mt="none"
+                  heading_size="_12_22"
+                  color="gray_60"
+                  weight="light"
+                >
+                  {t("i_have")}{" "}
+                  <Link className="text-purple hover:underline" href="#">
+                    {t("terms")}
+                  </Link>
+                </ParagraphField>,
+              ]}
+              form={form}
+              name="terms"
+              radioJustify="between"
+              w="full"
+            />
           </div>
         </Form.Item>
       </div>
       <Form.Item className="[body_&]:mb-0">
-        <ModalBtn>
+        <BtnField styleClassName="max-xm:!mt-[5px]">
           <Link href={"/registration/password"}>{t("button")}</Link>
-        </ModalBtn>
+        </BtnField>
       </Form.Item>
       <AuthLink
         text={t("login_text")}

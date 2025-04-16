@@ -62,7 +62,7 @@ export default async function Home() {
 
   return (
     <>
-      <HeroContainer>
+      <HeroContainer styleClassName="max-xm:h-[500px]">
         <LandingHero />
       </HeroContainer>
       <LandingExercise />

@@ -9,9 +9,9 @@ const Registration = () => {
   const t = useTranslations("registration");
 
   return (
-    <HeroContainer>
-      <ModalWrapper styleClassNames="[&]:items-start mx-auto pt-[120px] pb-[45px]">
-        <div className="flex-1">
+    <HeroContainer styleClassName="max-lg:h-[600px] max-sm:h-[500px]">
+      <ModalWrapper styleClassNames="[&]:items-start mx-auto pt-[120px] max-lg:pt-[50px] pb-[45px] max-lg:px-[30px] max-lg:gap-[40px] max-sm:py-[30px]">
+        <div className="flex-1 max-xm:hidden">
           <CardText
             title={t("title")}
             heading={t("heading")}

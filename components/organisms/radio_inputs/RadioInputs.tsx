@@ -3,7 +3,7 @@ import { CustomRadio } from "@/components/atoms/custom_radio";
 import { HeadingField } from "@/components/atoms/heading_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { Form, Radio } from "antd";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import {
   HeadingGap,
   RadioDirection,
@@ -17,24 +17,24 @@ import {
 
 const RadioInputs = ({
   heading,
+  paragraphs,
+  name,
+  form,
+  not_required,
+  radioMaxLength,
   headingGap = "normal",
   radioGroupHeight = "auto",
-  paragraphs,
   radioInputGap = "normal",
   w = "auto",
-  name,
   radioDirection = "normal",
   radioW = "full",
-  form,
   radioJustify = "between",
-  not_required,
   radioGap = "none",
-  radioMaxLength,
 }: {
-  heading: string;
+  heading?: string;
   headingGap?: keyof typeof HeadingGap;
   radioGroupHeight?: keyof typeof RadioGroupHeight;
-  paragraphs: string[];
+  paragraphs: ReactNode[];
   radioInputGap?: keyof typeof RadioInputGap;
   w?: keyof typeof W;
   name: string;
@@ -50,9 +50,11 @@ const RadioInputs = ({
 
   return (
     <div className={`!flex !flex-col ${HeadingGap[headingGap]} ${W[w]}`}>
-      <HeadingField mt="none" styleClassName="w-max">
-        {heading}
-      </HeadingField>
+      {heading && (
+        <HeadingField mt="none" styleClassName="w-max">
+          {heading}
+        </HeadingField>
+      )}
       <Form.Item
         name={`${name}`}
         rules={[
@@ -67,12 +69,12 @@ const RadioInputs = ({
           >
             {paragraphs.map((paragraph, index) => (
               <div
-                key={paragraph}
+                key={paragraph?.toString()}
                 className={`flex ${RadioDirection[radioDirection]} ${RadioJustify[radioJustify]} items-center ${RadioGap[radioGap]}`}
               >
                 <ParagraphField mt="none">
                   {radioMaxLength
-                    ? `${paragraph.slice(0, radioMaxLength)}...`
+                    ? `${(paragraph as string).slice(0, radioMaxLength)}...`
                     : paragraph}
                 </ParagraphField>
                 <CustomRadio
