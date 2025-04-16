@@ -1,15 +1,16 @@
-import { DatePicker } from "antd";
+import { DatePicker, DatePickerProps } from "antd";
 import Image from "next/image";
 
 const DateInput = ({
   placeholder,
   img_url = "/calendar.svg",
   white = false,
+  ...rest
 }: {
   placeholder: string;
   img_url?: string;
   white?: boolean;
-}) => {
+} & DatePickerProps) => {
   return (
     <DatePicker
       className={`!h-[60px] ${white ? "bg-white" : "!bg-blue-5"} !w-full`}
@@ -23,6 +24,7 @@ const DateInput = ({
           height={16}
         />
       }
+      {...rest}
     />
   );
 };

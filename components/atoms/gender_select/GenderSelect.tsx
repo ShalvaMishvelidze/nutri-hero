@@ -1,4 +1,4 @@
-import { Select } from "antd";
+import { Select, SelectProps } from "antd";
 import Image from "next/image";
 
 const GenderSelect = ({
@@ -7,15 +7,14 @@ const GenderSelect = ({
   female,
   img_url = "/checked.svg",
   white = false,
-  value,
+  ...rest
 }: {
   placeholder: string;
   male: string;
   female: string;
   img_url?: string;
   white?: boolean;
-  value?: string;
-}) => {
+} & SelectProps) => {
   return (
     <Select
       className={`!h-[60px] ${white ? "!bg-white" : "bg-blue-5"}`}
@@ -29,7 +28,7 @@ const GenderSelect = ({
           height={18}
         />
       }
-      defaultValue={value}
+      {...rest}
     >
       <Select.Option value="Male">{male}</Select.Option>
       <Select.Option value="Female">{female}</Select.Option>

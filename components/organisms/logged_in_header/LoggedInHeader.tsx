@@ -14,7 +14,7 @@ const LoggedInHeader = () => {
   const [aside, setAside] = useState(false);
 
   return (
-    <section className="w-full shadow-md">
+    <section className="w-full shadow-md max-xl:px-[30px]">
       <div className={header_container}>
         <Logo color="black" />
         <div className="flex gap-[10px] max-xm:hidden">

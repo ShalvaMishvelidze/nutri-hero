@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const LandingHero = () => {
   const t = useTranslations("landing_hero");
+
   return (
     <div className={container}>
       <TitleField

@@ -1,3 +1,4 @@
+"use client";
 import { RadioInputs } from "@/components/organisms/radio_inputs";
 import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";

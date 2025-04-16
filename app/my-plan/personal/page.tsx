@@ -7,22 +7,36 @@ import { TitleField } from "@/components/atoms/registration_field";
 import { Form } from "antd";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+const container =
+  "flex justify-center items-center max-w-[1280px] w-full mx-auto gap-[101px] max-lg:gap-[40px]";
+const form_container =
+  "pr-[140px] max-lg:pr-[40px] max-xm:py-[100px] max-xm:px-[30px]";
+const form_style = "!flex !flex-col !flex-wrap !w-full gap-[20px] !mt-[20px]";
 
 const Personal = () => {
   const t = useTranslations("my_plan.personal");
+  const router = useRouter();
 
   return (
-    <div className="flex justify-center items-center max-w-[1280px] w-full mx-auto gap-[101px]">
+    <div className={container}>
       <Image
-        className="w-1/2"
+        className="w-1/2 max-xm:hidden "
         src="/egg-salad.png"
         alt="My Plan"
         width={632}
         height={720}
       />
-      <div className="pr-[140px]">
+      <div className={form_container}>
         <TitleField>{t("title")}</TitleField>
-        <Form className="!flex !flex-col !flex-wrap !w-full gap-[20px] !mt-[20px]">
+        <Form
+          onFinish={() => router.push("/my-plan/goal")}
+          onValuesChange={(changedValue, allValues) => {
+            console.log(changedValue, allValues);
+          }}
+          className={form_style}
+        >
           <Form.Item
             name={"username"}
             rules={[{ required: true, message: "Please input your username!" }]}
@@ -73,7 +87,12 @@ const Personal = () => {
             </Form.Item>
           </div>
           <div className="flex justify-end">
-            <BtnField btn_size="medium" m_top="medium">
+            <BtnField
+              styleClassName="max-lg:!mt-[10px] max-xm:!w-full"
+              btn_size="medium"
+              m_top="medium"
+              htmlType="submit"
+            >
               {t("button")}
             </BtnField>
           </div>
