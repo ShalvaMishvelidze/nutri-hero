@@ -8,9 +8,10 @@ import { InputField } from "@/components/atoms/input_field";
 import { RegistrationParagraph } from "@/components/atoms/registration_paragraph";
 import { TitleField } from "@/components/atoms/registration_title";
 
-const Password = () => {
+const PasswordReset = () => {
   const t = useTranslations("registration_password");
   const [form] = Form.useForm();
+
   return (
     <div className="max-w-[1280px] w-full mx-auto flex gap-[101px] justify-center items-center">
       <Image
@@ -58,4 +59,4 @@ const Password = () => {
     </div>
   );
 };
-export default Password;
+export default PasswordReset;

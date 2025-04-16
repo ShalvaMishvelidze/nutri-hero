@@ -22,6 +22,7 @@ const RadioInputs = ({
   form,
   not_required,
   radioMaxLength,
+  childrenAreString = false,
   headingGap = "normal",
   radioGroupHeight = "auto",
   radioInputGap = "normal",
@@ -32,19 +33,20 @@ const RadioInputs = ({
   radioGap = "none",
 }: {
   heading?: string;
+  paragraphs: ReactNode[];
+  name: string;
+  form: ReturnType<typeof Form.useForm>[0];
+  not_required?: boolean;
+  radioMaxLength?: number;
+  childrenAreString?: boolean;
   headingGap?: keyof typeof HeadingGap;
   radioGroupHeight?: keyof typeof RadioGroupHeight;
-  paragraphs: ReactNode[];
   radioInputGap?: keyof typeof RadioInputGap;
   w?: keyof typeof W;
-  name: string;
   radioDirection?: keyof typeof RadioDirection;
   radioW?: keyof typeof RadioW;
-  form: ReturnType<typeof Form.useForm>[0];
   radioJustify?: keyof typeof RadioJustify;
-  not_required?: boolean;
   radioGap?: keyof typeof RadioGap;
-  radioMaxLength?: number;
 }) => {
   const [oldVal, setOldVal] = useState(form.getFieldValue(name));
 
@@ -72,11 +74,15 @@ const RadioInputs = ({
                 key={paragraph?.toString()}
                 className={`flex ${RadioDirection[radioDirection]} ${RadioJustify[radioJustify]} items-center ${RadioGap[radioGap]}`}
               >
-                <ParagraphField mt="none">
-                  {radioMaxLength
-                    ? `${(paragraph as string).slice(0, radioMaxLength)}...`
-                    : paragraph}
-                </ParagraphField>
+                {childrenAreString ? (
+                  <ParagraphField mt="none">
+                    {radioMaxLength
+                      ? `${(paragraph as string).slice(0, radioMaxLength)}...`
+                      : paragraph}
+                  </ParagraphField>
+                ) : (
+                  paragraph
+                )}
                 <CustomRadio
                   oldVal={oldVal}
                   setOldVal={setOldVal}
