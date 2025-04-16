@@ -55,6 +55,7 @@ const LoginForm = ({
           >
             <InputField
               placeholder={t("password")}
+              type="password"
               suffix={
                 <InputPostfix onClick={() => setStep("reset_password")}>
                   {t("forgot")}
