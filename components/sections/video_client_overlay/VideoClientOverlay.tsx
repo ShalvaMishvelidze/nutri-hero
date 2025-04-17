@@ -27,17 +27,27 @@ const VideoClientOverlay = ({
   };
 
   return (
-    <VideoContainer items="end" overlay videoRef={videoRef}>
+    <VideoContainer
+      styleClassName="max-sm:px-[30px]"
+      items="end"
+      overlay
+      videoRef={videoRef}
+    >
       <div className={container}>
         <Image
           src={"/play.svg"}
           alt="play"
           width={50}
           height={50}
-          className="size-[50px] cursor-pointer"
+          className="size-[50px] cursor-pointer max-xm:size-[30px]"
           onClick={handleTogglePlay}
         />
-        <TitleField textCase="uppercase" title_size="biggest" color="white">
+        <TitleField
+          styleClassName="text-center"
+          textCase="uppercase"
+          title_size="biggest"
+          color="white"
+        >
           {t("title")}
         </TitleField>
       </div>

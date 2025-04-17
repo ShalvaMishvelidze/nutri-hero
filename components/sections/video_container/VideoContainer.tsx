@@ -14,12 +14,14 @@ const VideoContainer = ({
   pb = "none",
   overlay = false,
   videoRef,
+  styleClassName = "",
 }: {
   children: ReactNode;
   items?: keyof typeof Items;
   pb?: keyof typeof Pb;
   overlay?: boolean;
   videoRef?: React.RefObject<HTMLVideoElement>;
+  styleClassName?: string;
 }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showMiniPlayer, setShowMiniPlayer] = useState(false);
@@ -57,7 +59,7 @@ const VideoContainer = ({
   };
 
   return (
-    <div className={`${container} ${Items[items]} ${Pb[pb]}`}>
+    <div className={`${container} ${Items[items]} ${Pb[pb]} ${styleClassName}`}>
       <div className={`${video_style} ${showMiniPlayer && mini_player_style} `}>
         <video
           ref={videoRef}

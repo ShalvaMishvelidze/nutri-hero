@@ -3,8 +3,12 @@ import { container, table, table_heads, table_item } from "./Table.style";
 import { useTranslations } from "next-intl";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
 
+const line_style =
+  "w-full border-t-[1px] border-t-gray-35 absolute top-1/2 left-0 transform -translate-y-1/2 max-sm:hidden";
+
 const RecipeTable = () => {
   const t = useTranslations("single_recipe");
+
   return (
     <div className={container}>
       <div className={table_heads}>
@@ -12,6 +16,7 @@ const RecipeTable = () => {
           {t("facts")}
         </HeadingField>
         <ParagraphField
+          styleClassName="max-sm:!mt-0"
           mt="small"
           color="dark_gray"
           heading_size="small"
@@ -21,12 +26,13 @@ const RecipeTable = () => {
         </ParagraphField>
       </div>
       <div className={table}>
-        <div className="w-full border-t-[1px] border-t-gray-35 absolute top-1/2 left-0 transform -translate-y-1/2"></div>
+        <div className={line_style}></div>
         <div className={table_item}>
           <HeadingField heading_size="small" weight="bold" mt="none">
             {t("energy")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -40,6 +46,7 @@ const RecipeTable = () => {
             {t("cal")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -53,6 +60,7 @@ const RecipeTable = () => {
             {t("fat")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -66,6 +74,7 @@ const RecipeTable = () => {
             {t("sat_fat")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -79,6 +88,7 @@ const RecipeTable = () => {
             {t("carbs")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -92,6 +102,7 @@ const RecipeTable = () => {
             {t("sugar")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -105,6 +116,7 @@ const RecipeTable = () => {
             {t("protein")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"
@@ -118,6 +130,7 @@ const RecipeTable = () => {
             {t("salt")}
           </HeadingField>
           <ParagraphField
+            styleClassName="max-sm:!mt-0"
             mt="small"
             color="dark_gray"
             heading_size="small"

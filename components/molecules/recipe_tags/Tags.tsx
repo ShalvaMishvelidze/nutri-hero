@@ -8,7 +8,7 @@ const Tags = ({ tags }: { tags: number[] }) => {
   return (
     <div className={container}>
       <HeadingField heading_size="small" weight="bold" mt="none">
-        {t("tags")}
+        {t("tags")}:
       </HeadingField>
       <div className={tags_container}>
         {tags.map((tag) => {

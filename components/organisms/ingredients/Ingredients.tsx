@@ -18,7 +18,7 @@ const Ingredients = ({
         <HeadingField heading_size="_16" weight="bold" mt="none">
           {t("ingredients_for")}
         </HeadingField>
-        <InputField input_size="_35" h="_25" value={1} />
+        <InputField input_size="_35" h="_25" value={"1"} />
         <HeadingField heading_size="_16" weight="bold" mt="none">
           {t("servings")}
         </HeadingField>
@@ -40,13 +40,29 @@ const Ingredients = ({
           );
         })}
       </div>
-      <HeadingField heading_size="_16" weight="bold" mt="_60">
+      <HeadingField
+        heading_size="_16"
+        weight="bold"
+        mt="_60"
+        styleClassName="max-xm:!mt-[40px] max-sm:!mt-[30px]"
+      >
         {t("allergens")}
       </HeadingField>
-      <ParagraphField heading_size="_14" weight="normal" mt="normal">
+      <ParagraphField
+        styleClassName="max-sm:!mt-[10px]"
+        heading_size="_14"
+        weight="normal"
+        mt="normal"
+      >
         {t("contains")}
       </ParagraphField>
-      <BtnField btn_size="medium" bg="purple_light" radius="_3" text="tiny">
+      <BtnField
+        styleClassName="max-sm:!w-full max-sm:!mt-[20px]"
+        btn_size="medium"
+        bg="purple_light"
+        radius="_3"
+        text="tiny"
+      >
         {t("purchase")}
       </BtnField>
     </div>
