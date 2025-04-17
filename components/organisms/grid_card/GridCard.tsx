@@ -38,7 +38,10 @@ const GridCard = ({
           </ParagraphField>
         </div>
         {can_be_checked && (
-          <div className="flex gap-[15px] relative z-20">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="flex gap-[15px] relative z-20"
+          >
             <div className="group relative">
               <Image
                 src={"/refresh.svg"}
