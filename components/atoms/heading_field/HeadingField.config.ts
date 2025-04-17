@@ -1,16 +1,16 @@
 export enum HeadingSize {
-  small = "text-[17px] leading-[22px] tracking-[0.01px]",
-  normal = "text-[19px] leading-[22px]",
-  medium = "text-[22px] leading-[28px]",
-  big = "text-[28px] leading-[32px]",
-  _13 = "text-[13px] leading-[18px]",
-  _14_28 = "text-[14px] leading-[28px]",
-  _15_22 = "text-[15px] leading-[22px]",
-  _15_28 = "text-[15px] leading-[28px]",
-  _16 = "text-[16px] leading-[28px] tracking-[0.01px]",
-  _18_20 = "text-[18px] leading-[20px]",
-  _20 = "text-[20px] leading-[28px]",
-  _30 = "text-[30px] leading-[32px]",
+  small = "text-[17px] leading-[22px] tracking-[0.01px] max-xm:text-[14px] max-xm:leading-[20px]",
+  normal = "text-[19px] leading-[22px] max-xm:text-[15px] max-xm:leading-[20px]",
+  medium = "text-[22px] leading-[28px] max-xm:text-[16px] max-xm:leading-[22px]",
+  big = "text-[28px] leading-[32px] max-xm:text-[20px] max-xm:leading-[28px]",
+  _13 = "text-[13px] leading-[18px] max-xm:text-[12px] max-xm:leading-[16px]",
+  _14_28 = "text-[14px] leading-[28px] max-xm:text-[12px] max-xm:leading-[20px]",
+  _15_22 = "text-[15px] leading-[22px] max-xm:text-[13px] max-xm:leading-[18px]",
+  _15_28 = "text-[15px] leading-[28px] max-xm:text-[13px] max-xm:leading-[22px]",
+  _16 = "text-[16px] leading-[28px] tracking-[0.01px] max-xm:text-[13px] max-xm:leading-[20px]",
+  _18_20 = "text-[18px] leading-[20px] max-xm:text-[14px] max-xm:leading-[18px]",
+  _20 = "text-[20px] leading-[28px] max-xm:text-[15px] max-xm:leading-[22px]",
+  _30 = "text-[30px] leading-[32px] max-xm:text-[22px] max-xm:leading-[28px]",
 }
 
 export enum MT {

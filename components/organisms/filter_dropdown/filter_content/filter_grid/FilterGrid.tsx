@@ -1,6 +1,7 @@
 import { RecipesGridRow } from "./recipes_grid_row";
 
-const container = "flex flex-col gap-[20px]";
+const container =
+  "grid grid-cols-3 max-xm:grid-cols-2 max-sm:grid-cols-1 gap-x-[16px] gap-y-[20px]";
 
 const FilterGrid = () => {
   return (

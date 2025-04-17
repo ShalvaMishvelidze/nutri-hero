@@ -18,7 +18,7 @@ const FilterDropdown = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
           setDropdown={setDropdown}
         />
       </div>
-      {dropdown && <FilterContent t={t} />}
+      <FilterContent dropdown={dropdown} t={t} />
     </section>
   );
 };

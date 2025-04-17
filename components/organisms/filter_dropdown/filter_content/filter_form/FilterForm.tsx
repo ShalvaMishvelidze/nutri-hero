@@ -4,7 +4,7 @@ import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { useTranslations } from "next-intl";
 
-const content_container = `flex h-[200px] justify-between w-full gap-[80px]`;
+const content_container = `flex justify-between w-full gap-[80px] max-lg:gap-[30px] max-xm:grid !pb-[30px] max-xm:grid-cols-2 max-xm:gap-0`;
 
 const FilterForm = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   const [form] = useForm();
@@ -36,6 +36,7 @@ const FilterForm = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
         form={form}
       />
       <RadioInputs
+        styleClassName="max-xs:h-[180px]"
         heading={t("filters.3.title")}
         radioInputGap="small"
         radioDirection="reverse"

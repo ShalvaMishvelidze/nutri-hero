@@ -21,10 +21,20 @@ const LibraryHeroContent = ({
   return (
     <>
       <div className={text_container}>
-        <TitleField mb="none" color="white" title_size="biggest">
+        <TitleField
+          mb="none"
+          color="white"
+          title_size="biggest"
+          styleClassName="text-center"
+        >
           {t("title")}
         </TitleField>
-        <ParagraphField heading_size="medium" mt="none" color="white">
+        <ParagraphField
+          styleClassName="text-center"
+          heading_size="medium"
+          mt="none"
+          color="white"
+        >
           {t("paragraph")}
         </ParagraphField>
       </div>
@@ -48,18 +58,27 @@ const LibraryHeroContent = ({
               }
             />
           </Form.Item>
-          <BtnField h="medium" m_top="none" htmlType="submit" btn_size="medium">
-            {t("workouts")}
-          </BtnField>
-          <BtnField
-            h="medium"
-            m_top="none"
-            htmlType="submit"
-            btn_size="medium"
-            bg="blue"
-          >
-            {t("recipes")}
-          </BtnField>
+          <div className="flex gap-[16px] max-xm:w-full max-xs:flex-col">
+            <BtnField
+              styleClassName="max-xm:!w-full max-xm:!h-[40px]"
+              h="medium"
+              m_top="none"
+              htmlType="submit"
+              btn_size="medium"
+            >
+              {t("workouts")}
+            </BtnField>
+            <BtnField
+              styleClassName="max-xm:!w-full max-xm:!h-[40px]"
+              h="medium"
+              m_top="none"
+              htmlType="submit"
+              btn_size="medium"
+              bg="blue"
+            >
+              {t("recipes")}
+            </BtnField>
+          </div>
         </div>
       </Form>
     </>

@@ -54,6 +54,8 @@ module.exports = {
       transparent: "transparent",
     },
     screens: {
+      xxs: "360px",
+      xs: "480px",
       sm: "640px",
       m: "768px",
       xm: "840px",

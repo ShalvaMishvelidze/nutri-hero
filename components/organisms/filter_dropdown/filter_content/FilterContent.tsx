@@ -2,10 +2,16 @@ import { useTranslations } from "next-intl";
 import { FilterForm } from "./filter_form";
 import { FilterGrid } from "./filter_grid";
 
-const FilterContent = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
+const FilterContent = ({
+  t,
+  dropdown,
+}: {
+  t: ReturnType<typeof useTranslations>;
+  dropdown: boolean;
+}) => {
   return (
     <>
-      <FilterForm t={t} />
+      {dropdown && <FilterForm t={t} />}
       <FilterGrid />
     </>
   );

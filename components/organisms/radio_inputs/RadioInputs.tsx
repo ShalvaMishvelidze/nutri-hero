@@ -31,6 +31,7 @@ const RadioInputs = ({
   radioW = "full",
   radioJustify = "between",
   radioGap = "none",
+  styleClassName = "",
 }: {
   heading?: string;
   paragraphs: ReactNode[];
@@ -47,6 +48,7 @@ const RadioInputs = ({
   radioW?: keyof typeof RadioW;
   radioJustify?: keyof typeof RadioJustify;
   radioGap?: keyof typeof RadioGap;
+  styleClassName?: string;
 }) => {
   const [oldVal, setOldVal] = useState(form.getFieldValue(name));
 
@@ -67,7 +69,7 @@ const RadioInputs = ({
       >
         <Radio.Group className={`${RadioW[radioW]}`}>
           <div
-            className={`flex flex-col flex-wrap ${RadioInputGap[radioInputGap]} ${RadioGroupHeight[radioGroupHeight]}`}
+            className={`flex flex-col flex-wrap ${RadioInputGap[radioInputGap]} ${RadioGroupHeight[radioGroupHeight]} ${styleClassName}`}
           >
             {paragraphs.map((paragraph, index) => (
               <div
