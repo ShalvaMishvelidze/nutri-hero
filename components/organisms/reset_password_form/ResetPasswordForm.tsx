@@ -30,7 +30,7 @@ const ResetPasswordForm = ({
       transition={{ duration: 0.4 }}
       className="w-full"
     >
-      <form onSubmit={handleSubmit} className="w-[324px] ">
+      <form onSubmit={handleSubmit} className="max-w-[324px] w-full">
         <TitleField
           mb="medium"
           title_size="_22"

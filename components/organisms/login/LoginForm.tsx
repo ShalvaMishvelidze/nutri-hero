@@ -33,7 +33,7 @@ const LoginForm = ({
       transition={{ duration: 0.4 }}
       className="w-full"
     >
-      <div className="w-[324px] max-sm:w-[240px]">
+      <div className="max-w-[324px] w-full">
         <TitleField
           mb="medium"
           title_size="_22"
