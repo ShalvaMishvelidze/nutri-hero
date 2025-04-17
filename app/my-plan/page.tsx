@@ -13,8 +13,10 @@ const MyPlan = async () => {
   return (
     <section>
       <MyPlanHero />
-      <Recipes days={days} />
-      <Workouts days={days} />
+      <div className="max-xl:px-[30px]">
+        <Recipes days={days} />
+        <Workouts days={days} />
+      </div>
     </section>
   );
 };

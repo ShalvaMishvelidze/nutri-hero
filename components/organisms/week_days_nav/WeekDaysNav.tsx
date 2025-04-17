@@ -17,7 +17,30 @@ const WeekDaysNav = ({ days, parent }: { days: string[]; parent: string }) => {
         }}
         slidesPerView={7}
         spaceBetween={8}
-        className="h-[50px] max-w-[940px] w-full mx-auto"
+        className="h-[50px] w-[calc(100%-60px)] mx-auto"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          320: {
+            slidesPerView: 2,
+          },
+          520: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 4,
+          },
+          780: {
+            slidesPerView: 5,
+          },
+          860: {
+            slidesPerView: 6,
+          },
+          980: {
+            slidesPerView: 7,
+          },
+        }}
       >
         {days.map((day, index) => (
           <SwiperSlide

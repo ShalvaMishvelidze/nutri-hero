@@ -51,6 +51,17 @@ const Recipes = ({ days }: { days: string[] }) => {
         slidesPerView={3}
         className={`recipe-swiper ${swiper_style}`}
         onSlideChange={handleSlideChange}
+        breakpoints={{
+          10: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          840: {
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide>
           <GridCard

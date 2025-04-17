@@ -18,7 +18,12 @@ const NumberCard = ({
     <>
       {size === "big" && (
         <div className={number_cards}>
-          <TitleField color={Color[color]} title_size="giant" mb="none">
+          <TitleField
+            styleClassName="max-lg:text-[52px] max-lg:leading-[62px]"
+            color={Color[color]}
+            title_size="giant"
+            mb="none"
+          >
             {title}
           </TitleField>
           <HeadingField

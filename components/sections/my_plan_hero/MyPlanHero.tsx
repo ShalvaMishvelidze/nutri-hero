@@ -15,7 +15,12 @@ import Link from "next/link";
 const MyPlanHero = () => {
   const t = useTranslations("my_plan.hero");
   return (
-    <HeroContainer items="end" pb="medium" img_url="/my-plan-hero.png">
+    <HeroContainer
+      items="end"
+      pb="medium"
+      img_url="/my-plan-hero.png"
+      styleClassName="max-xm:h-[500px]"
+    >
       <div className={hero_content_container}>
         <div className={hero_left_container}>
           <NumberCardContainer />
