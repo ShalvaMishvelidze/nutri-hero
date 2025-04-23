@@ -29,7 +29,7 @@ const Login = () => {
         className="relative overflow-hidden transition-all duration-300"
       >
         <AnimatePresence mode="wait">
-          <ModalWrapper styleClassNames="pt-[50px] max-xm:py-[30px] pb-[42px] max-xm:px-[30px] flex justify-center max-sm:px-[30px] max-w-[384px] w-full mx-auto">
+          <ModalWrapper styleClassNames="pt-[50px] max-xm:py-[30px] pb-[42px] max-xm:!max-w-[420px] max-xm:!w-full max-xm:!px-[60px] max-sm:!px-[30px] flex justify-center w-max mx-auto">
             {step === "login" && (
               <LoginForm
                 slideInVariants={slideInVariants.login}

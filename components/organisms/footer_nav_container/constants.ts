@@ -6,9 +6,9 @@ export const explore_links = [
 ];
 
 export const company_links = [
-  { text: "legal", url: "legal" },
+  { text: "legal", url: "terms" },
   { text: "contact_us", url: "contact" },
-  { text: "press", url: "press" },
+  { text: "press", url: "blog" },
 ];
 
 export const blog_links = [
