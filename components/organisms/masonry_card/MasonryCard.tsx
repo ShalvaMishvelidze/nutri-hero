@@ -39,7 +39,7 @@ const MasonryCard = ({
           alt="blog"
           width={324}
           height={ImgH[imgH]}
-          className={`w-[324px] h-[${ImgH[imgH]}] rounded-[5px] mt-[10px]`}
+          className={`w-full h-[${ImgH[imgH]}] rounded-[5px] mt-[10px]`}
         />
         <ParagraphField
           heading_size="_13_22"
