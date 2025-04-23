@@ -8,7 +8,7 @@ import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { splitParagraphIntoBlocks } from "@/utils";
 
 const header_container =
-  "py-[23px] border-t-[2px] border-b-[2px] border-blue-5";
+  "py-[23px] max-xs:py-[10px] border-t-[2px] border-b-[2px] border-blue-5";
 
 const SingleBlog = ({
   index,
@@ -26,7 +26,7 @@ const SingleBlog = ({
     splitParagraphIntoBlocksNumber
   );
   return (
-    <article className="mt-[40px]">
+    <article className="mt-[40px] max-xs:mt-[20px]">
       <div className={header_container}>
         <TitleField mb="none" title_size="_50_60">
           {t("title")}
@@ -56,7 +56,7 @@ const SingleBlog = ({
         alt="blog"
         width={580}
         height={ImgH[imgH]}
-        className={`w-full h-[${ImgH[imgH]}px] object-cover mt-[50px] rounded-[5px]`}
+        className={`w-full h-[${ImgH[imgH]}px] object-cover mt-[50px] rounded-[5px] max-xs:mt-[20px]`}
       />
       {blocks.map((block, idx) => {
         return (
@@ -65,6 +65,7 @@ const SingleBlog = ({
             heading_size="_18_31"
             weight="normal"
             mt="medium"
+            styleClassName="max-xs:mt-[10px]"
           >
             {block}
           </ParagraphField>

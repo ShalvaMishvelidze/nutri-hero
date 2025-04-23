@@ -1,6 +1,7 @@
 import { SingleBlogOrganism } from "@/components/organisms/single_blog";
 
-const container = "w-full max-w-[580px] mx-auto mb-[116px]";
+const container =
+  "w-full max-w-[580px] mx-auto mb-[116px] max-sm:px-[30px] max-xs:mb-[60px]";
 
 const SingleBlog = () => {
   return (

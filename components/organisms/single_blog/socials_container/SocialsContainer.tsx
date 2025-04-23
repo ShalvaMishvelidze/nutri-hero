@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 const SocialsContainer = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   return (
-    <div className="flex justify-start items-center gap-[15px] mt-[15px]">
+    <div className="flex flex-wrap justify-start items-center gap-[15px] mt-[15px]">
       <SocialContainer img_url="/facebook-gray.svg" text={t("share")} />
       <SocialContainer img_url="/twitter-gray.svg" text={t("tweet")} />
       <div className="flex justify-start items-center gap-[6px]">
