@@ -5,10 +5,12 @@ import PersonalDetails from "@/components/sections/personal_details/PersonalDeta
 import { Settings } from "@/components/sections/settings";
 import { useSearchParams } from "next/navigation";
 
-const gray_container = "absolute left-0 top-0 w-[31%] h-full bg-white-6 z-10";
+const gray_container =
+  "absolute left-0 top-0 w-[31%] h-full bg-white-6 z-10 max-sm:hidden";
 const content_style =
-  "relative w-full max-w-[1000px] mx-auto z-20 flex gap-[101px]";
-const content_right = "flex flex-col gap-[50px] my-[50px] w-full max-w-[664px]";
+  "relative w-full max-w-[1000px] mx-auto z-20 flex gap-[101px] max-xl:px-[30px] max-sm:flex-col max-sm:px-0 max-sm:gap-0";
+const content_right =
+  "flex flex-col gap-[50px] my-[50px] w-full max-w-[664px] max-sm:px-[30px]";
 
 const Account = () => {
   const section = useSearchParams().get("section");

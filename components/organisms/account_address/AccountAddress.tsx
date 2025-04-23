@@ -14,7 +14,7 @@ const AccountAddress = () => {
         <Form.Item name={"address"}>
           <InputField white placeholder={t("address")} />
         </Form.Item>
-        <div className="flex gap-[16px]">
+        <div className="flex gap-[16px] max-xs:flex-col">
           <Form.Item
             name={"city"}
             rules={[{ required: true, message: "Please select your gender!" }]}

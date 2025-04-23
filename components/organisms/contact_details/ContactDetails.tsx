@@ -19,11 +19,13 @@ const ContactDetails = () => {
           <InputField white placeholder={t("email")} />
         </Form.Item>
       </div>
-      <div className="flex justify-end gap-[16px]">
-        <BtnField btn_size="medium" bg="gray">
+      <div className="flex justify-end gap-[16px] max-xs:flex-col mt-[30px] max-xs:mt-[10px]">
+        <BtnField m_top="none" btn_size="medium" bg="gray">
           {t("cancel")}
         </BtnField>
-        <BtnField btn_size="medium">{t("save")}</BtnField>
+        <BtnField m_top="none" btn_size="medium">
+          {t("save")}
+        </BtnField>
       </div>
     </div>
   );

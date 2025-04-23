@@ -4,10 +4,11 @@ import { UnitCard } from "../unit_card";
 import { HeadingField } from "@/components/atoms/heading_field";
 import { Switch } from "antd";
 
-const grid = "grid grid-cols-2 gap-x-[16px] gap-y-[20px] w-full";
+const grid =
+  "grid grid-cols-2 max-sm:grid-cols-1 gap-x-[16px] gap-y-[20px] w-full";
 
 const unit_container =
-  "w-full rounded-[5px] border border-blue-5 px-[12px] flex justify-between items-center h-[50px] mt-[40px]";
+  "w-full rounded-[5px] border border-blue-5 px-[12px] flex justify-between items-center h-[50px] mt-[40px] max-xs:px-[8px]";
 
 const BodyMeasurements = () => {
   const t = useTranslations("account.body_measurements");
@@ -48,7 +49,7 @@ const BodyMeasurements = () => {
       </div>
       <div className={unit_container}>
         <HeadingField
-          styleClassName="pl-[8px]"
+          styleClassName="pl-[8px] max-xs:pl-0"
           heading_size="_16"
           weight="normal"
           mt="none"
@@ -58,7 +59,7 @@ const BodyMeasurements = () => {
         <Switch
           checkedChildren={t("imperial")}
           unCheckedChildren={t("metric")}
-          className="!bg-purple !scale-150 !mr-[20px]"
+          className="!bg-purple !scale-150 !mr-[20px] max-sm:!scale-100 max-xs:!mr-0"
         />
       </div>
     </div>

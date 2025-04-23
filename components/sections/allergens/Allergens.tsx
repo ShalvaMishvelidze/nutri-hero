@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 const allergens_container = "flex flex-col gap-[10px] mt-[30px]";
 const allergen_container =
-  "allergens-container w-full h-[50px] rounded-[5px] border border-blue-5 flex justify-between items-center px-[20px]";
+  "allergens-container w-full h-[50px] rounded-[5px] border border-blue-5 flex justify-between items-center px-[20px] max-xxs:px-[10px]";
 
 const Allergens = () => {
   const t = useTranslations("account.allergens");
@@ -32,12 +32,12 @@ const Allergens = () => {
             <Switch
               checkedChildren={t("on")}
               unCheckedChildren={t("off")}
-              className="!scale-150"
+              className="!scale-150 max-xxs:!scale-100"
             />
           </div>
         ))}
       </div>
-      <div className="flex justify-end gap-[16px] mt-[30px]">
+      <div className="flex justify-end gap-[16px] mt-[30px] max-xs:flex-col">
         <BtnField m_top="none" btn_size="medium" bg="gray">
           {t("cancel")}
         </BtnField>

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const method_container =
-  "w-full h-[50px] rounded-[5px] border border-blue-5 flex justify-between items-center px-[20px] mt-[30px]";
+  "w-full h-[50px] rounded-[5px] border border-blue-5 flex justify-between items-center px-[20px] mt-[30px] max-xxs:h-auto max-xxs:py-[5px] max-xxs:flex-wrap";
 const method_left = "flex justify-start items-center gap-[6px] ";
 
 const Settings = () => {
@@ -77,8 +77,8 @@ const Settings = () => {
       <HeadingField color="purple" heading_size="_13" weight="normal" mt="_40">
         {t("customer_id")}
       </HeadingField>
-      <div className="flex justify-end mt-[107px]">
-        <BtnField styleClassName="!bg-red" btn_size="medium">
+      <div className="flex justify-end mt-[107px] max-sm:mt-[50px]">
+        <BtnField styleClassName="!bg-red max-xxs:!w-full" btn_size="medium">
           {t("btn")}
         </BtnField>
       </div>
