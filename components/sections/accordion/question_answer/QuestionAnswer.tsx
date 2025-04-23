@@ -18,7 +18,7 @@ const QuestionAnswer = ({
   const [active, setActive] = useState(false);
 
   const answer_container = `w-full overflow-hidden transition-h duration-[300ms] ${
-    active ? "h-[136px]" : "h-0"
+    active ? "h-[136px] max-xs:h-[168px] max-xxs:h-[300px]" : "h-0"
   }`;
 
   return (

@@ -17,7 +17,7 @@ const ContactForm = () => {
       </TitleField>
       <ParagraphField>{t("paragraph")}</ParagraphField>
       <Form className="!mt-[30px] flex flex-col gap-[20px]">
-        <div className="flex gap-[16px]">
+        <div className="flex gap-[16px] max-xxs:flex-col">
           <Form.Item
             name={"email"}
             rules={[
@@ -77,7 +77,12 @@ const ContactForm = () => {
           />
         </Form.Item>
         <div className="flex justify-end">
-          <BtnField htmlType="submit" btn_size="medium" m_top="_10">
+          <BtnField
+            styleClassName="max-xxs:!w-full"
+            htmlType="submit"
+            btn_size="medium"
+            m_top="_10"
+          >
             {t("btn")}
           </BtnField>
         </div>

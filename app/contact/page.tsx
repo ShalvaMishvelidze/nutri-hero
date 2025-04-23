@@ -20,8 +20,10 @@ const Contact = () => {
         </TitleField>
       </HeroContainer>
       <div className="w-full max-w-[664px] mx-auto my-[40px] ">
-        <Accordion />
-        <ContactForm />
+        <div className="max-m:px-[30px]">
+          <Accordion />
+          <ContactForm />
+        </div>
       </div>
     </section>
   );
