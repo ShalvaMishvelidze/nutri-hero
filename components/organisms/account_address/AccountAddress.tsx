@@ -12,21 +12,17 @@ const AccountAddress = () => {
       </TitleField>
       <div className="flex flex-col gap-[20px]">
         <Form.Item name={"address"}>
-          <InputField
-            white
-            placeholder={t("address")}
-            value={"23 Watkin Street"}
-          />
+          <InputField white placeholder={t("address")} />
         </Form.Item>
         <div className="flex gap-[16px]">
           <Form.Item
-            name={"gender"}
+            name={"city"}
             rules={[{ required: true, message: "Please select your gender!" }]}
           >
-            <InputField white placeholder={t("city")} value={"Swansea"} />
+            <InputField white placeholder={t("city")} />
           </Form.Item>
           <Form.Item
-            name={"date_of_birth"}
+            name={"post_code"}
             rules={[
               {
                 required: true,
@@ -34,7 +30,7 @@ const AccountAddress = () => {
               },
             ]}
           >
-            <InputField white placeholder={t("post_code")} value={"SA16YD"} />
+            <InputField white placeholder={t("post_code")} />
           </Form.Item>
         </div>
       </div>

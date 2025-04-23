@@ -17,7 +17,9 @@ const GenderSelect = ({
 } & SelectProps) => {
   return (
     <Select
-      className={`!h-[60px] ${white ? "!bg-white" : "bg-blue-5"}`}
+      className={`!h-[60px] ${
+        white ? "[body_&_.ant-select-selector]:!bg-white" : "bg-blue-5"
+      }`}
       placeholder={placeholder}
       suffixIcon={
         <Image
