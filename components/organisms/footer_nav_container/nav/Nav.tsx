@@ -26,7 +26,7 @@ const Nav = ({
         ) : (
           <Link
             className={link_style}
-            href={`/${is_logged_in ? "#" : ""}${url}`}
+            href={`/${is_logged_in ? "" : "#"}${url}`}
             key={url}
           >
             {t(text)}

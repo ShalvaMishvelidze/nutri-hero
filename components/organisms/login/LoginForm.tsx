@@ -42,7 +42,14 @@ const LoginForm = ({
         >
           {t("welcome")}
         </TitleField>
-        <Form className={small_container}>
+        <Form
+          onFinish={() => {
+            setIsLoggedInCookie(true).then(() => {
+              router.push("/my-plan");
+            });
+          }}
+          className={small_container}
+        >
           <Form.Item
             rules={[{ required: true, message: "Please enter your username!" }]}
             name="username"
@@ -76,16 +83,7 @@ const LoginForm = ({
               {t("facebook")}
             </ModalLink>
           </div>
-          <BtnField
-            htmlType="submit"
-            onSubmit={() => {
-              setIsLoggedInCookie(true).then(() => {
-                router.push("/my-plan");
-              });
-            }}
-          >
-            {t("login")}
-          </BtnField>
+          <BtnField htmlType="submit">{t("login")}</BtnField>
         </Form>
         <AuthLink
           text={t("register_text")}
