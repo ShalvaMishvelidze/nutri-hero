@@ -78,7 +78,7 @@ const RegistrationForm = () => {
                   weight="light"
                 >
                   {t("i_have")}{" "}
-                  <Link className="text-purple hover:underline" href="#">
+                  <Link className="text-purple hover:underline" href="/terms">
                     {t("terms")}
                   </Link>
                 </ParagraphField>,

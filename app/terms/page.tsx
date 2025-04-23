@@ -4,9 +4,10 @@ import { TitleField } from "@/components/atoms/registration_field";
 import { splitParagraphIntoBlocks } from "@/utils";
 import { useTranslations } from "next-intl";
 
-const container = "w-full max-w-[580px] mx-auto mb-[116px] mt-[40px]";
+const container =
+  "w-full max-w-[580px] mx-auto mb-[116px] mt-[40px] max-sm:px-[30px] max-xs:mt-[20px] max-xs:mb-[50px]";
 const header_container =
-  "py-[23px] border-t-[2px] border-b-[2px] border-blue-5";
+  "py-[23px] max-xxs:py-[10px] border-t-[2px] border-b-[2px] border-blue-5";
 
 const TermsAndConditions = () => {
   const t = useTranslations("terms");
@@ -37,6 +38,7 @@ const TermsAndConditions = () => {
             heading_size="_18_31"
             weight="normal"
             mt="medium"
+            styleClassName="max-xxs:mt-[15px]"
           >
             {block}
           </ParagraphField>
