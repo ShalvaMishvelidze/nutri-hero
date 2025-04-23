@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const container =
-  "relative w-full rounded-[5px] bg-white-6 px-[25px] py-[16px] cursor-pointer";
+  "relative w-full rounded-[5px] bg-white-6 px-[25px] py-[16px] cursor-pointer max-xs:p-[10px]";
 const btn_container = "absolute top-[12px] right-[10px]";
 
 const CartTop = () => {
@@ -28,11 +28,17 @@ const CartTop = () => {
           setIsEditing={setIsEditing}
         />
       </div>
-      <HeadingField mt="none" heading_size="_13" color="gray" weight="normal">
+      <HeadingField
+        styleClassName="max-sm:mt-[9px]"
+        mt="none"
+        heading_size="_13"
+        color="gray"
+        weight="normal"
+      >
         {t("card_1.heading")}
       </HeadingField>
       <TitleField
-        styleClassName="[&]:tracking-[1.2px]"
+        styleClassName="[&]:tracking-[1.2px] max-sm:mt-[10px]"
         title_size="medium"
         textCase="uppercase"
         mb="none"

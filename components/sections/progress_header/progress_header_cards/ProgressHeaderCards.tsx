@@ -2,7 +2,7 @@ import { UnitCard } from "@/components/organisms/unit_card";
 import { useTranslations } from "next-intl";
 
 const container =
-  "grid grid-cols-3 gap-[16px] w-full max-w-[1000px] mx-auto mt-[40px]";
+  "grid grid-cols-3 gap-[16px] w-full max-w-[1000px] mx-auto mt-[40px] max-m:grid-cols-1";
 
 const ProgressHeaderCards = ({
   t,

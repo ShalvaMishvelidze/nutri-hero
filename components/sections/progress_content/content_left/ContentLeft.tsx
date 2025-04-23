@@ -1,7 +1,8 @@
 import { CardBottom } from "./card_bottom";
 import { CardTop } from "./cart_top";
 
-const container = "max-w-[664px] w-full min-w-[324px] flex flex-col gap-[16px]";
+const container =
+  "max-w-[664px] w-full min-w-[324px] flex flex-col gap-[16px] max-xs:min-w-full";
 
 const ContentLeft = () => {
   return (

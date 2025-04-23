@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
 const container =
-  "relative w-full rounded-[5px] bg-white-6 pl-[25px] pr-[15px] py-[29px] flex justify-between items-center cursor-pointer";
+  "relative w-full rounded-[5px] bg-white-6 pl-[25px] pr-[15px] py-[29px] flex justify-between items-center cursor-pointer max-xs:flex-col max-xs:items-start max-xs:gap-[10px] max-xs:p-[10px]";
 
 const CardBottom = () => {
   const router = useRouter();
@@ -29,6 +29,7 @@ const CardBottom = () => {
         btn_size="_139"
         bg="purple_light"
         m_top="none"
+        styleClassName="max-xs:!w-full"
         onClick={(e) => e.stopPropagation()}
       >
         {t("card_2.activate")}

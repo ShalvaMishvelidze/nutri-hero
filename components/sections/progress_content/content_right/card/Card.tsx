@@ -3,7 +3,8 @@ import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const container = "px-[20px] pt-[30px] bg-white-6 rounded-[5px] min-h-[416px]";
+const container =
+  "px-[20px] pt-[30px] bg-white-6 rounded-[5px] min-h-[416px] max-xs:p-[10px]";
 
 const Card = ({ card_number = 3 }: { card_number?: number }) => {
   const t = useTranslations(`progress.card_${card_number}`);

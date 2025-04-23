@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Card } from "./card";
 import { Pagination } from "swiper/modules";
 
-const container = "max-w-[324px] w-full";
+const container = "max-w-[324px] w-full max-sm:max-w-full";
 
 const ContentRight = () => {
   return (
