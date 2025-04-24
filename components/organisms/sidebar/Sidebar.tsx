@@ -20,22 +20,29 @@ const Sidebar = ({
         aside ? "h-[320px]" : "h-0"
       }`}
     >
-      {is_logged_in
-        ? logged_in_links.map((link) => {
+      {is_logged_in ? (
+        <>
+          {logged_in_links.map((link) => {
             return (
               <Link key={link} href={`/${link}`}>
                 {t(link)}
               </Link>
             );
-          })
-        : landing_links.map((link) => {
-            return (
-              <Link key={link} href={`/#${link}`}>
-                {t(link)}
-              </Link>
-            );
           })}
-      <HeaderBtnContainer />
+          <Link key={"contact_key"} href={`/contact`}>
+            {t("contact")}
+          </Link>
+        </>
+      ) : (
+        landing_links.map((link) => {
+          return (
+            <Link key={link} href={`/#${link}`}>
+              {t(link)}
+            </Link>
+          );
+        })
+      )}
+      {is_logged_in || <HeaderBtnContainer />}
     </nav>
   );
 };

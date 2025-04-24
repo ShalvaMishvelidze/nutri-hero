@@ -10,7 +10,8 @@
     "blog": "Blog",
     "account": "Account",
     "sign_up": "Sign Up",
-    "login": "Login"
+    "login": "Login",
+    "contact": "contact"
   },
   "landing_hero": {
     "heading": "Captivating header goes here!",
