@@ -33,7 +33,7 @@ const HeroContainer = ({
         {children}
       </div>
       {overlay && (
-        <div className="bg-gray-15 absolute left-0 top-0 w-full h-full z-10"></div>
+        <div className="bg-gray-25 absolute left-0 top-0 w-full h-full z-10"></div>
       )}
     </div>
   );
