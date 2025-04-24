@@ -2,8 +2,8 @@
 import { HeadingField } from "@/components/atoms/heading_field";
 import { Bg, TextColor } from "./UnitCard.config";
 import { useState } from "react";
-import { EditBtn } from "./edit_btn";
 import { bottom_container, container, text_container } from "./UnitCard.style";
+import { EditBtn } from "@/components/atoms/edit_btn";
 
 const ProgressHeaderCard = ({
   heading,

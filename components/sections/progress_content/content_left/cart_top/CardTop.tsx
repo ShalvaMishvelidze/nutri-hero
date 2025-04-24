@@ -2,7 +2,7 @@
 import { HeadingField } from "@/components/atoms/heading_field";
 import { ParagraphField } from "@/components/atoms/paragraph_field";
 import { TitleField } from "@/components/atoms/registration_field";
-import { EditBtn } from "@/components/organisms/unit_card/edit_btn";
+import { EditBtn } from "@/components/atoms/edit_btn";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

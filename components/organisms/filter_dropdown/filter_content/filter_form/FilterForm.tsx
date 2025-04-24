@@ -4,7 +4,7 @@ import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { useTranslations } from "next-intl";
 
-const content_container = `flex justify-between w-full gap-[80px] max-lg:gap-[30px] max-xm:grid !pb-[30px] max-xm:grid-cols-2 max-xm:gap-0`;
+const content_container = `flex justify-between w-full gap-[80px] max-lg:gap-[30px] max-xm:grid !pb-[30px] max-xm:grid-cols-2 max-sm:grid-cols-1 max-xm:gap-0`;
 
 const FilterForm = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   const [form] = useForm();
@@ -19,7 +19,6 @@ const FilterForm = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
         radioDirection="reverse"
         radioJustify="end"
         radioGap="small"
-        radioMaxLength={8}
         radioGroupHeight="_110"
         form={form}
       />
@@ -30,20 +29,17 @@ const FilterForm = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
         radioDirection="reverse"
         radioJustify="end"
         radioGap="small"
-        radioMaxLength={8}
         radioGroupHeight="_110"
         name="filter 1"
         form={form}
       />
       <RadioInputs
-        styleClassName="max-xs:h-[180px]"
+        styleClassName="grid grid-cols-2 min-w-[480px] max-sm:grid-cols-1 max-sm:min-w-full"
         heading={t("filters.3.title")}
         radioInputGap="small"
         radioDirection="reverse"
         radioJustify="end"
         radioGap="small"
-        radioMaxLength={8}
-        radioGroupHeight="_110"
         w="full"
         paragraphs={[
           t("filters.3.1"),
