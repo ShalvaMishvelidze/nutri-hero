@@ -45,3 +45,4 @@ next-env.d.ts
 reference.tailwind.config.js
 /test.tsx
 test.tsx
+*storybook.log
