@@ -18,7 +18,7 @@ const meta = {
   title: "components/atoms/HeadingField",
   component: HeadingField,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   argTypes: {

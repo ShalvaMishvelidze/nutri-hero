@@ -18,7 +18,7 @@ const meta = {
   title: "components/atoms/BtnField",
   component: BtnField,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   argTypes: {

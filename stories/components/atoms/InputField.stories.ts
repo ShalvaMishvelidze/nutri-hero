@@ -9,7 +9,7 @@ const meta = {
   title: "components/atoms/InputField",
   component: InputField,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   argTypes: {

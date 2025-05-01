@@ -14,7 +14,7 @@ const meta = {
   title: "components/atoms/TitleField",
   component: TitleField,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   argTypes: {

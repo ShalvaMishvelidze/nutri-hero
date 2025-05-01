@@ -16,7 +16,7 @@ const meta = {
   title: "components/atoms/ParagraphField",
   component: ParagraphField,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   argTypes: {
