@@ -62,3 +62,7 @@ export enum TextWrap {
   wrap = "whitespace-nowrap overflow-hidden text-ellipsis",
   none = "",
 }
+
+// button // primary, secondary
+// custom button
+// link

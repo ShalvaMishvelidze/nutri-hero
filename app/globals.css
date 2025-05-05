@@ -60,7 +60,10 @@ body .ant-select .ant-select-selector {
 
 #storybook-root {
   background-color: #e5e5e5;
-  padding: 1px !important;
-  width: 100%;
+  /* padding: 1px !important; */
+  box-sizing: border-box;
+  position: relative;
   height: 100%;
+  border: 1px solid transparent;
+  width: 100%;
 }

@@ -120,3 +120,19 @@ export const Primary: Story = {
 //     primary: false,
 //   },
 // };
+
+export const BtnGreen: Story = {
+  args: {
+    children: "Button Text",
+    h: "regular",
+    btn_size: "_88",
+    m_top: "none",
+    bg: "green",
+    m_left: "none",
+    p_bottom: "none",
+    text: "normal",
+    radius: "regular",
+    textColor: "white",
+    styleClassName: "btn-field",
+  },
+};
