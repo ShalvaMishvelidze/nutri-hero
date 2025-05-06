@@ -1,3 +1,4 @@
+"use client";
 import { CustomForm } from "@/components/organisms/custom_form";
 import { Meta, StoryObj } from "@storybook/react";
 
@@ -6,7 +7,7 @@ const meta: Meta<typeof CustomForm> = {
   component: CustomForm,
   argTypes: {
     fields: {
-      control: "multi-select",
+      control: "object",
     },
     generalInputFieldProps: {
       control: "object",
@@ -64,15 +65,9 @@ export const Default: Story = {
     buttons: [
       {
         children: "Submit",
-        onClick: () => {
-          console.log("Submit clicked");
-        },
       },
       {
         children: "Cancel",
-        onClick: () => {
-          console.log("Cancel clicked");
-        },
       },
     ],
   },
