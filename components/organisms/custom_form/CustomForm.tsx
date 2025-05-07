@@ -58,11 +58,11 @@ const CustomForm = ({
                   label={field.label}
                   rules={field.rules}
                   className={`${
-                    field.inputWidth ? `!${field.inputWidth}` : "w-full"
+                    field.inputWidth ? `!${field.inputWidth}` : "w-auto"
                   }`}
                 >
                   <InputField
-                    {...{ ...field.inputProps, ...generalInputProps }}
+                    {...{ ...generalInputProps, ...field.inputProps }}
                     type={field.type}
                     placeholder={field.placeholder}
                   />
@@ -77,7 +77,7 @@ const CustomForm = ({
           return (
             <BtnField
               key={`${Math.random()}form_button_${index}`}
-              {...{ ...button.btnProps, ...generalButtonProps }}
+              {...{ ...generalButtonProps, ...button.btnProps }}
             >
               {button.children}
             </BtnField>
